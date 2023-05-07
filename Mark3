@@ -704,13 +704,6 @@ Tab:AddButton({
   	end
 })
 
-Tab:AddButton({
-	Name = "自制脚本（手机端）",
-	Callback = function()
-  loadstring(game:HttpGet('https://pastebin.com/raw/2df0787b'))()
-  	end
-})
-
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
 	Icon = "rbxassetid://4483345998",
