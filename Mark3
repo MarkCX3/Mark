@@ -711,6 +711,13 @@ Tab:AddButton({
   	end
 })
 
+Tab:AddButton({
+	Name = "云脚本",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/V1.1.2.lua"))()
+  	end
+})
+
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
 	Icon = "rbxassetid://4483345998",
