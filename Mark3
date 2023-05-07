@@ -598,12 +598,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://7734068321",
   PremiumOnly = false
 })
-Tab:AddButton({
-  Name = "doors手雷"
-  Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
- end
-})
+
 Tab:AddButton({
   Name = "磁铁",
   Callback = function()
@@ -706,6 +701,13 @@ Tab:AddButton({
 	Name = "BS脚本卡密:195154ajd",
 	Callback = function()
   loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,71,57,103,117,122,88,100,75})end)())))()--BS
+  	end
+})
+
+Tab:AddButton({
+	Name = "自制脚本（手机端）",
+	Callback = function()
+  loadstring(game:HttpGet('https://pastebin.com/raw/2df0787b'))()
   	end
 })
 
