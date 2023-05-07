@@ -236,12 +236,6 @@ Tab:AddButton({
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
  end
 })
-Tab:AddButton({
-  Name = "动感星期五"
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-end
-})	
 local Tab = Window:MakeTab({
 	Name = "DOORS(门)",
 	Icon = "rbxassetid://4483345998",
