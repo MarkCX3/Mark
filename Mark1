@@ -53,8 +53,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-Tab:AddParagraph("油管搬运，借用了某些大哥的源码，勿喷")
-Tab:AddParagraph("欢迎，","使用脚本测试版，特别感谢cx330")
+Tab:AddParagraph("借用了一些源码勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
   Name = "反挂机（一定要，不一定）",
@@ -689,7 +688,14 @@ Tab:AddButton({
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
   end
 })
- 
+
+Tab:AddButton({
+  Name = "XS"
+  Callback = function()
+  getgenv().XC="作者XC" loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
+ end 
+})
+
 Tab:AddButton({
   Name = "MSDOORS2.4(纯英文)",
   Callback = function()
