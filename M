@@ -241,18 +241,6 @@ Tab:AddButton({
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
  end
 })
-Tab:AddButton({
-	Name = "越狱",
-	Callback = function()
-loadstring(game:GetObjects("rbxassetid://3762448307")[1].Source)()
-end
-})
-Tab:AddButton({
-	Name = "3008",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Viserromero/Antex/master/SCP3008'))()
-end
-})
 local Tab = Window:MakeTab({
 	Name = "DOORS(门)",
 	Icon = "rbxassetid://4483345998",
