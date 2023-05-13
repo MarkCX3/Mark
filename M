@@ -1,3 +1,47 @@
+Skip to content
+
+Search or jump to...
+Pulls
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@MarkCX3 
+MarkCX3
+/
+Mark
+Public
+Cannot fork because you own this repository and are not a member of any organizations.
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+More
+BreadcrumbsMark
+/Mark1
+Go to file
+t
+Latest commit
+MarkCX3
+MarkCX3
+Update Mark1
+99eebd9
+ · 
+8 hours ago
+History
+BreadcrumbsMark
+/Mark1
+File metadata and controls
+
+Code
+
+Blame
+789 lines (761 loc) · 23 KB
 function  SCRIPT()
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -88,7 +132,7 @@ setclipboard("794550123")
 end
 })      
 local Tab = Window:MakeTab({
-  Name = "脚本",
+  Name = "单独服务器脚本",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -159,11 +203,6 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-	Name = "俄亥俄州",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Ohio./script.lua"))()
-end
-Tab:AddButton({
   Name = "动作",
   Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main2"))()
@@ -227,6 +266,12 @@ Tab:AddButton({
   Name = "监狱人生",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+ end
+})
+Tab:AddButton({
+  Name = "俄亥俄州",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
  end
 })
 Tab:AddButton({
@@ -786,3 +831,4 @@ end
 getgenv().key = "Mark" --卡密
 getgenv().find = "加作者qq3334964" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
+Press Alt+F1 for a menu of operations.
