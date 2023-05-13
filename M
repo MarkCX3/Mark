@@ -159,6 +159,11 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
+	Name = "俄亥俄州",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Ohio./script.lua"))()
+end
+Tab:AddButton({
   Name = "动作",
   Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main2"))()
@@ -288,6 +293,30 @@ game:GetService("ReplicatedStorage").Remotes.generateBoost:FireServer("Coins", 4
 game:GetService("ReplicatedStorage").Remotes.generateBoost:FireServer("Levels", 480, 10)
 ---无限射击
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AquaModz/DestructionSIMModded/main/DestructionSimAqua.lua'))()
+end
+})
+Tab:AddButton({
+	Name = "幸运方块",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/bZt3SNqE"))()
+end
+})
+Tab:AddButton({
+	Name = "骨折模拟器",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/G0Q4axgA"))()
+end
+})
+Tab:AddButton({
+	Name = "汽车经营",
+	Callback = function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/LIMITED!-Car-Dealership-Tycoon-Update-script-9099"))()
+end
+})
+Tab:AddButton({
+	Name = "动感星期五(因手机屏幕小先去设置开发者选项扩大屏幕宽度)",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9vSv4Z80"))()
 end
 })
 local Tab = Window:MakeTab({
