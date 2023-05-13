@@ -259,12 +259,6 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
 })
 Tab:AddButton({
-  Name = "手淫脚本"
-  Callback = function()
-  loadstring(game:HttpGet(("https://raw.githubusercontent.com/MarkCX3/Mark/main/4"))()
-end
-})
-Tab:AddButton({
   Name = "加速能量条",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
