@@ -253,30 +253,6 @@ Tab:AddButton({
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Viserromero/Antex/master/SCP3008'))()
 end
 })
-Tab:AddButton({
-	Name = "光剑模拟器",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Helios-Hub/main/Loader.lua"))()
-end
-})
-Tab:AddButton({
-	Name = "幸运方块",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/bZt3SNqE"))()
-end
-})
-Tab:AddButton({
-	Name = "骨折模拟器",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/G0Q4axgA"))()
-end
-})
-Tab:AddButton({
-	Name = "动感星期五(因手机屏幕小先去设置开发者选项扩大屏幕宽度)",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/9vSv4Z80"))()
-end
-})
 local Tab = Window:MakeTab({
 	Name = "DOORS(门)",
 	Icon = "rbxassetid://4483345998",
