@@ -258,12 +258,6 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-Tab:Addbutton({
-  Name = "调整Fov"
-  Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/MarkCX3/Mark/main/3"))()
-end
-})
 Tab:AddButton({
   Name = "加速能量条",
   Callback = function()
