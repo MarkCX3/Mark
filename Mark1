@@ -704,6 +704,13 @@ Tab:AddButton({
   	end
 })
 
+Tab:AddButton({
+	Name = "XS脚本（卡密w）",
+	Callback = function()
+  getgenv().XC="作者XC" loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
+  end
+})
+
 local Tab = Window:MakeTab({
     Name = "特殊脚本（可能无效）",
 	Icon = "rbxassetid://4483345998",
