@@ -99,12 +99,6 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "pls donate"
-  Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/saints"))() 
- end
-})
-Tab:AddButton({
   Name = "bf",
   Callback = function()
     oadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Mobile-Loader"))()
