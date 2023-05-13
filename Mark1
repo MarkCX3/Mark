@@ -393,9 +393,6 @@ troll.TextWrapped = true
 troll.MouseButton1Down:connect(function()
    workspace.CurrentCamera.FieldOfView = 40
 end)
-end
-})
-
 Tab:AddButton({
   Name = "加速能量条",
   Callback = function()
