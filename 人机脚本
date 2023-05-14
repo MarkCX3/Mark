@@ -201,12 +201,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/
  end
 })
 Tab:AddButton({
-	Name = "破坏者谜团",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-end
-})
-Tab:AddButton({
   Name = "战斗勇士",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
