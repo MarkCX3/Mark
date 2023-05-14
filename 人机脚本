@@ -189,16 +189,16 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+	Name = "起床之战",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end
+})
+Tab:AddButton({
   Name = "巨人模拟器",
   Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/Giant%20Simulator%20Auto%20Rebirth.lua'))()
  end
-})
-Tab:AddButton({
-	Name = "鱿鱼游戏",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
-end
 })
 Tab:AddButton({
   Name = "战斗勇士",
