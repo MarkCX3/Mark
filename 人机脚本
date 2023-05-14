@@ -231,6 +231,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Viserromero/Antex/mas
 end
 })
 Tab:AddButton({
+	Name = "一路向西",
+	Callback = function()
+loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
+end
+})
+Tab:AddButton({
   Name = "俄亥俄州",
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
