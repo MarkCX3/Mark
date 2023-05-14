@@ -8,7 +8,7 @@ local Start = Instance.new("TextButton")
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UI.Name = "卡密系统"
+UI.Name = "卡密认证"
 UI.Parent = ScreenGui
 UI.Active = true
 UI.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -67,7 +67,7 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "114514jjqwrGAK代言人NB" then
+    if Key.Text == "5201314" then
         ScreenGui:Destroy()
         local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -119,11 +119,11 @@ CoreGui:SetCore("SendNotification", {
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 -----------------------------------------------------------------------------------------------------
-local Window = OrionLib:MakeWindow({Name = "小鱼GAK脚本", HidePremium = false, SaveConfig = true,IntroText = "小鱼GAK脚本", ConfigFolder = "“身体健康。”"})
+local Window = OrionLib:MakeWindow({Name = "范依晨女神", HidePremium = false, SaveConfig = true,IntroText = "范依晨女神", ConfigFolder = "“小鱼制作”"})
 -----------------------------------------------------------------------------------------------------
 
 local Tab = Window:MakeTab({
-    Name = "小鱼GAK脚本玩家功能",
+    Name = "范依晨女神脚本玩家功能",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -191,7 +191,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "小鱼GAK脚本中心",
+    Name = "脚本中心",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
