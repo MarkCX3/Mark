@@ -111,12 +111,6 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-	Name = "鱿鱼游戏",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
-end
-})
-Tab:AddButton({
   Name = "the rake1",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
@@ -199,6 +193,12 @@ Tab:AddButton({
   Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/Giant%20Simulator%20Auto%20Rebirth.lua'))()
  end
+})
+Tab:AddButton({
+	Name = "鱿鱼游戏",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end
 })
 Tab:AddButton({
   Name = "战斗勇士",
