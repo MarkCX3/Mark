@@ -105,6 +105,12 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
+	Name = "3008",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Viserromero/Antex/master/SCP3008'))()
+end
+})
+Tab:AddButton({
   Name = "彩虹朋友",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
