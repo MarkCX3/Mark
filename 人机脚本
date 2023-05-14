@@ -111,6 +111,12 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
+	Name = "鱿鱼游戏",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end
+})
+Tab:AddButton({
   Name = "the rake1",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
