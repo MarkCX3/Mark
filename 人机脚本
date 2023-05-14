@@ -201,6 +201,12 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+	Name = "厕所模拟器",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/misc-scripts/main/public_bathroom_crasher.lua'))()
+end
+})
+Tab:AddButton({
 	Name = "健壮传奇",
 	Callback = function()
 loadstring(game:HttpGet('https://ghostbin.co/paste/ctpa/raw'))()
@@ -241,12 +247,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
  end
-})
-Tab:AddButton({
-	Name = "幸运方块",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/bZt3SNqE"))()
-end
 })
 Tab:AddButton({
   Name = "bf",
