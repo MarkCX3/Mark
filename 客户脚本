@@ -1,0 +1,733 @@
+local LBLG = Instance.new("ScreenGui", getParent)
+
+local LBL = Instance.new("TextLabel", getParent)
+
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+
+LBLG.Parent = game.CoreGui
+
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LBLG.Enabled = true
+
+LBL.Name = "LBL"
+
+LBL.Parent = LBLG
+
+LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+
+LBL.BackgroundTransparency = 1
+
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+
+LBL.Position = UDim2.new(0.75,0,0.010,0)
+
+LBL.Size = UDim2.new(0, 133, 0, 30)
+
+LBL.Font = Enum.Font.GothamSemibold
+
+LBL.Text = "TextLabel"
+
+LBL.TextColor3 = Color3.new(1, 1, 1)
+
+LBL.TextScaled = true
+
+LBL.TextSize = 14
+
+LBL.TextWrapped = true
+
+LBL.Visible = true
+
+local FpsLabel = LBL
+
+local Heartbeat = game:GetService("RunService").Heartbeat
+
+local LastIteration, Start
+
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+
+	LastIteration = tick()	for Index = #FrameUpdateTable, 1, -1 do
+
+		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+
+	end
+
+	FrameUpdateTable[1] = LastIteration
+
+	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+
+	CurrentFPS = CurrentFPS - CurrentFPS % 1
+
+	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+
+end
+
+Start = tick()
+
+Heartbeat:Connect(HeartbeatUpdate)
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "终🐔龙脚本",
+
+    Text = "加载成功，欢迎！！！",
+
+    Duration = 5, 
+
+})
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+-----------------------------------------------------------------------------------------------------
+
+local Window = OrionLib:MakeWindow({Name = "“door终🐔龙脚本区域2”", HidePremium = false, SaveConfig = true,IntroText = "“door终🐔龙脚本区2”", ConfigFolder = "“身体健康。”"})
+
+-----------------------------------------------------------------------------------------------------
+
+if game.PlaceId == 6516141723 then
+
+    Rayfield:Notify({
+
+        Title = "注意!",
+
+        Content = "不要在大厅运行，不然你是有可能被封的",
+
+        Duration = 30,
+
+        Image = 4483362458,
+
+        Actions = {
+
+            Ignore = {
+
+                Name = "oh",             
+
+            }
+
+        }
+
+    })
+
+    return
+
+end
+
+local about = Window:MakeTab({
+
+    Name = "必看公告",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+about:AddParagraph("ggg永久免费")
+
+about:AddParagraph("脚本免费脚本 请勿去圈钱")
+
+about:AddParagraph("圈钱人死全家。")
+
+about:AddParagraph("我是个蔡坤。")
+
+about:AddParagraph("还不快双击加关注。")
+
+about:AddParagraph("快手名：robl.ox.终🐔龙")
+
+-----------------------------------------------------------------------------------------------------
+
+local Tab = Window:MakeTab({
+
+    Name = "主要的",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "欢迎欢迎"
+
+})
+
+Tab:AddToggle({
+
+  Name = "穿墙",
+
+  Default = false,
+
+  Callback = function(Value)
+
+    if Value then
+
+      Noclip = true
+
+      Stepped = game.RunService.Stepped:Connect(function()
+
+        if Noclip == true then
+
+          for a, b in pairs(game.Workspace:GetChildren()) do
+
+            if b.Name == game.Players.LocalPlayer.Name then
+
+              for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+
+                if v:IsA("BasePart") then
+
+                  v.CanCollide = false
+
+                end
+
+              end
+
+            end
+
+          end
+
+         else
+
+          Stepped:Disconnect()
+
+        end
+
+      end)
+
+     else
+
+      Noclip = false
+
+    end
+
+  end
+
+})
+
+Tab:AddToggle({
+
+	Name = "夜视",
+
+	Default = false,
+
+	Callback = function(Value)
+
+		if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+		end
+
+	end
+
+})
+
+Tab:AddButton({
+
+	Name = "飞行",
+
+	Callback = function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
+
+	end 
+
+})
+
+Tab:AddTextbox({
+
+	Name = "移动速度",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+	end	 
+
+})
+
+Tab:AddButton({
+
+	Name = "隐身(E)",
+
+	Callback = function()
+
+	 loadstring(game:HttpGet('https://pastebin.com/raw/nwGEvkez'))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "激光枪",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+
+end
+
+})
+
+Tab:AddButton({
+
+  Name = "反挂机（可降低踢出服务器的风险）",
+
+  Callback = function()
+
+    print("Anti Afk On")
+
+    local vu = game:GetService("VirtualUser")
+
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+      vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+      wait(1)
+
+      vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+    end)
+
+  end
+
+})
+
+Tab:AddToggle({
+
+  Name = "夜视",
+
+  Default = false,
+
+  Callback = function(Value)
+
+    if Value then
+
+      game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+     else
+
+      game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+    end
+
+  end
+
+})
+
+Tab:AddTextbox({
+
+  Name = "重力设置",
+
+  Default = "",
+
+  TextDisappear = true,
+
+  Callback = function(Value)
+
+    game.Workspace.Gravity = Value
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "回满血（自慰）",
+
+  Callback = function ()
+
+    FullHealth = 100
+
+    game.Players.LocalPlayer.Character.Humanoid.Health = FullHealth
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "门绘图显示",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/doors1"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "DOORS低回拉穿墙",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "剪刀",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "骷髅钥匙",
+
+  Callback = function ()
+
+    local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
+
+  end
+
+})
+
+Tab:AddButton({
+
+	Name = "紫色手电筒（在电梯购买东西的时候使用）",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+
+end
+
+})  
+
+Tab:AddButton({
+
+	Name = "手电筒（没电会有bug）",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))()
+
+end
+
+})      
+
+Tab:AddButton({
+
+  Name = "极端模式",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "耶稣十字架",
+
+  Callback = function ()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi2"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "紫光十字架",
+
+  Callback = function ()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "万圣节十字架",
+
+  Callback = function ()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "普通十字架",
+
+  Callback = function ()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+	Name = "DOORS变身脚本",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+
+end
+
+})
+
+Tab:AddButton({
+
+  Name = "MSDOORS2.4(纯英文)",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "磁铁",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "刷怪菜单(别人的，因为我没有压缩脚本)",
+
+  Callback = function ()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shuaguai"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+  Name = "加速能量条",
+
+  Callback = function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+	Name = "踏空行走",
+
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+
+	end
+
+})
+
+Tab:AddButton({
+
+	Name = "爬墙",
+
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+
+end
+
+})
+
+Tab:AddButton({
+
+  Name = "一只猫",
+
+  Callback = function()
+
+    local shadow=game:GetObjects("rbxassetid://8069174048")[1]
+
+shadow.Parent = game.Players.LocalPlayer.Backpack
+
+local Players = game:GetService("Players")
+
+local Plr = Players.LocalPlayer
+
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+
+local Hum = Char:WaitForChild("Humanoid")
+
+local RightArm = Char:WaitForChild("RightUpperArm")
+
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+
+local RightC1 = RightArm.RightShoulder.C1
+
+local LeftC1 = LeftArm.LeftShoulder.C1
+
+        local function setupCrucifix(tool)
+
+        RightArm.Name = "R_Arm"
+
+        LeftArm.Name = "L_Arm"
+
+        
+
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+
+        for v in next, Hum:GetPlayingAnimationTracks() do
+
+            v:Stop()
+
+        end
+
+        end
+
+shadow.Equipped:Connect(function()
+
+setupCrucifix(shadow)
+
+game.Players.LocalPlayer:SetAttribute("Hidden", true)
+
+end)
+
+ 
+
+shadow.Unequipped:Connect(function()
+
+    game.Players.LocalPlayer:SetAttribute("Hidden", false)
+
+        RightArm.Name = "RightUpperArm"
+
+        LeftArm.Name = "LeftUpperArm"
+
+        
+
+        RightArm.RightShoulder.C1 = RightC1
+
+        LeftArm.LeftShoulder.C1 = LeftC1
+
+end)
+
+  end
+
+})
+
+Tab:AddButton({
+
+	Name = "神圣炸弹",
+
+	    Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+
+  end
+
+})
+
+Tab:AddButton({
+
+	Name = "感恩节模式",
+
+	Callback = function()
+
+        if thanksgivingEnabled then
+
+            return Rayfield:Notify({
+
+                Title = "Error",
+
+                Content = "You have already ran this",
+
+                Duration = 6.5,
+
+                Image = 4483362458,
+
+                Actions = {},
+
+            })
+
+        end
+
+        thanksgivingEnabled=true
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZepsyyCodesLUA/Utilities/main/DOORSthanksgiving"))()
+
+	end,
+
+})
+
+Tab:AddButton({
+
+    Name = "MC房间",
+
+    Callback = function()
+
+        loadstring(game:HttpGet("https://pastebin.com/raw/y2WmccLk"))()
+
+    end,
+
+})
+
+Tab:AddTextbox({
+
+	Name = "设置门的文字",
+
+	PlaceholderText = "关注我，关注我",
+
+	RemoveTextAfterFocusLost = false,
+
+	Callback = function(Text)
+
+        local r=workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]
+
+        r.Door.Sign.Stinker.Text=Text
+
+        r.Door.Sign.Stinker.Highlight.Text=Text
+
+        r.Door.Sign.Stinker.Shadow.Text=Text
+
+	end,    
+
+})
