@@ -84,7 +84,7 @@ Key.Font = Enum.Font.SourceSans
 
 Key.PlaceholderText = "卡密"
 
-Key.Text = ""
+Key.Text = "3.1415926"
 
 Key.TextColor3 = Color3.new(0, 0, 0)
 
