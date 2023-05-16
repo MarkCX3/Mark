@@ -41,7 +41,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "M二改脚本", HidePremium = false, SaveConfig = true,IntroText = "M二改脚本", ConfigFolder = "M二改脚本"})
+local Window = OrionLib:MakeWindow({Name = "人机脚本", HidePremium = false, SaveConfig = true,IntroText = "人机脚本", ConfigFolder = "人机脚本"})
 OrionLib:MakeNotification({
   Name = "密码正确，欢迎使用脚本",
   Content = "当前游戏ID为:" .. game.GameId .. ".",
