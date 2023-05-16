@@ -808,6 +808,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/kEq7bdf9"))()
 end
 }) --卡密正确后的脚本
 end
-getgenv().key = "Mark" --卡密
+getgenv().key = "宋" --卡密
 getgenv().find = "加作者qq3334964" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
