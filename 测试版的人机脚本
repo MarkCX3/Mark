@@ -294,41 +294,6 @@ Tab:AddButton({
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
 end
 })
-Tab:AddButton({
-	Name = "最强HDS",
-	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
-	end 
-})
-Tab:AddButton({
-	Name = "XD夜",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
-	end
-})
-Tab:AddButton({
-	Name = "doors变形",
-	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
-	end
-})
-Tab:AddButton({
-	Name = "福利脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-	end
-})
-Tab:AddButton({
-	Name = "超级脚本",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
-end
-})
-Tab:AddButton({
-	Name = "修改",
-	Callback = function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
-	end
-})
 local Tab = Window:MakeTab({
   Name = "单独功能脚本",
   Icon = "rbxassetid://4483345998",
@@ -605,6 +570,46 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/ma
 end
 })
 local Tab = Window:MakeTab({
+	Name = "DOORS(门)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "最强HDS",
+	Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
+	end 
+})
+Tab:AddButton({
+	Name = "XD夜",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "doors变形",
+	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
+	end
+})
+Tab:AddButton({
+	Name = "福利脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+	end
+})
+Tab:AddButton({
+	Name = "超级脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
+end
+})
+Tab:AddButton({
+	Name = "修改",
+	Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+	end
+})
+local Tab = Window:MakeTab({
 	Name = "脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -818,4 +823,8 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/kEq7bdf9"))()
 end
-})
+}) --卡密正确后的脚本
+end
+getgenv().key = "宋" --卡密
+getgenv().find = "加作者qq3334964" --联系作者什么的
+loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
