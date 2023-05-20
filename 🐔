@@ -53,6 +53,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
+Tab:AddParagraph("更新FE脚本，宠物模拟器X,后室")
 Tab:AddParagraph("借用了一些源码，勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
@@ -259,12 +260,6 @@ Tab:AddButton({
   Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
  end
-})
-Tab:AddButton({
-  Name = "blox Fruits"
-  Callback = function()
-   loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BloxFruits"),true))()
-end
 })
 Tab:AddButton({
 	Name = "后室",
