@@ -653,7 +653,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-  Name = "XS脚本（卡密w）",
+  Name = "XS脚本（卡密x）",
   Callback = function()
   getgenv().XC="作者XC" loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
   end
