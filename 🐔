@@ -53,6 +53,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
+Tab:AddParagraph("更新后室，宠物模拟器X?和神光脚本")
 Tab:AddParagraph("借用了一些源码，勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
