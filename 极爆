@@ -40,7 +40,7 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "成功进入"; Text ="极暴脚本"; Duration = 4; })
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "极暴脚本", HidePremium = false, SaveConfig = true,IntroText = "CBMyyds", ConfigFolder = "极暴暂免"})
+local Window = OrionLib:MakeWindow({Name = "极暴脚本", HidePremium = false, SaveConfig = true,IntroText = "极暴yyds", ConfigFolder = "极暴暂免"})
 
 local about = Window:MakeTab({
     Name = "极暴制作",
@@ -48,7 +48,7 @@ local about = Window:MakeTab({
     PremiumOnly = false
 })
 
-about:AddParagraph("该CBM为正式版")
+about:AddParagraph("该脚本为正式版")
 about:AddParagraph("脚本暂时免费脚本 请勿去圈钱")
 about:AddParagraph("作者:终极龙和暴龙 ")
 about:AddParagraph("帮助者:暴龙师傅")
