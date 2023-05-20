@@ -255,13 +255,25 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+	Name = "后室",
+	Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/Gsqd40fL'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Synapse X",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
+  	end    
+})
+Tab:AddButton({
   Name = "bf",
   Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
  end
 })
 local Tab = Window:MakeTab({
-	Name = "DOORS(门)",
+	Name = "DOORS",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -277,8 +289,60 @@ Tab:AddButton({
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
 end
 })
+Tab:AddButton({
+	Name = "最强HDS",
+	Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
+	end 
+})
+Tab:AddButton({
+	Name = "XD夜",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "doors变形",
+	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
+	end
+})
+Tab:AddButton({
+	Name = "福利脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+	end
+})
+Tab:AddButton({
+	Name = "超级脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
+end
+})
+Tab:AddButton({
+	Name = "修改",
+	Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+	end
+})
+Tab:AddButton({
+    Name = "全成就【不是真的】不要在大厅使用!!",
+    Callback = function ()
+        local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+        for i,v in pairs(require(game.ReplicatedStorage.Achievements)) do
+            spawn(function()
+                require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.AchievementUnlock)(nil, i)
+            end)
+        end
+    end
+})
+Tab:AddButton({
+	Name = "DOORS变身脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end
+})  
 local Tab = Window:MakeTab({
-  Name = "单独功能脚本",
+  Name = "通用",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -406,11 +470,6 @@ Tab:AddButton({
     game.Players.LocalPlayer.Character.Humanoid.Health = FullHealth
   end
 })
-local Tab = Window:MakeTab({
-	Name = "通用",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
 Tab:AddButton({
 	Name = "飞车",
 	Callback = function()
@@ -421,38 +480,6 @@ Tab:AddButton({
 	Name = "甩飞",
 	Callback = function() 
 loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
-	end
-})
-
-local Tab = Window:MakeTab({
-	Name = "通用",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddTextbox({
-	Name = "移动速度",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end	 
-})
-
-Tab:AddTextbox({
-	Name = "跳跃高度",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end	 
-})
-Tab:AddTextbox({
-	Name = "地心引力(重力)设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Workspace.Gravity = Value
 	end
 })
 Tab:AddToggle({
@@ -481,23 +508,6 @@ Tab:AddToggle({
 	    end
 	end
 })
-Tab:AddToggle({
-	Name = "夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
-})
-Tab:AddButton({
-	Name = "飞行",
-	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
-	end 
-})
 Tab:AddButton({
 	Name = "跟踪玩家",
 	Callback = function()
@@ -514,18 +524,6 @@ Tab:AddButton({
 	Name = "踏空行走",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-	end
-})
-Tab:AddButton({
-	Name = "旋转",
-	Callback = function()
-      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  	end
-})
-Tab:AddButton({
-	Name = "隐身",
-	Callback = function()
-loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
 	end
 })
 Tab:AddTextbox({
@@ -551,46 +549,6 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
 end
-})
-local Tab = Window:MakeTab({
-	Name = "DOORS(门)",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "最强HDS",
-	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
-	end 
-})
-Tab:AddButton({
-	Name = "XD夜",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
-	end
-})
-Tab:AddButton({
-	Name = "doors变形",
-	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
-	end
-})
-Tab:AddButton({
-	Name = "福利脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-	end
-})
-Tab:AddButton({
-	Name = "超级脚本",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
-end
-})
-Tab:AddButton({
-	Name = "修改",
-	Callback = function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
-	end
 })
 local Tab = Window:MakeTab({
 	Name = "脚本",
@@ -736,20 +694,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "特殊脚本（可能无效）",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "DOORS变身脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-end
-})    
-
-    
-local Tab = Window:MakeTab({
-	Name = "FE",
+	Name = "FE🌚",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -806,7 +751,25 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/kEq7bdf9"))()
 end
-}) --卡密正确后的脚本
+})
+Tab:AddButton({
+	Name = "C00lgui",
+	Callback = function()
+   loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+  	end    
+})
+Tab:AddButton({
+	Name = "1x1x1x1",
+	Callback = function()
+     loadstring(game:HttpGet(('https://pastebin.com/raw/JipYNCht'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "变玩家（R6）",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
+  	end    
+})--卡密正确后的脚本
 end
 getgenv().key = "宋" --卡密
 getgenv().find = "加作者qq3334964" --联系作者什么的
