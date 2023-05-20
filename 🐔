@@ -54,7 +54,6 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
 })
 Tab:AddParagraph("借用了一些源码，勿喷")
-Tab:AddParagraph("更新FE脚本,宠物模拟器X,后室")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
   Name = "反挂机（一定要，不一定）",
