@@ -275,7 +275,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
 	Name = "DOORS",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -578,7 +578,7 @@ end
 })
 local Tab = Window:MakeTab({
   Name = "仅DOORS可用脚本",
-  Icon = "rbxassetid://7734068321",
+  Icon = "rbxassetid://10483855823",
   PremiumOnly = false
 })
 
@@ -613,7 +613,35 @@ Tab:AddButton({
     local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
   end
 })
- 
+
+ Tab:AddButton({
+	Name = "神圣手雷（炸到自己黑屏）",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "万圣节十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Mye123/MyeWareHub/main/Halloween%20Crucifix"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "错误十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Bumble-crucifix/main/Bumble-crucifix"))()
+    end
+}) 
+
+Tab:AddButton({
+	Name = "圣诞节十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Christmas-Crucifix/main/Christmas%20crucifix.lua"))()
+    end
+}) 
+
 Tab:AddButton({
 	Name = "紫色手电筒（在电梯购买东西的时候使用）",
 	Callback = function()
@@ -621,13 +649,49 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Pur
 end
 })  
  
+ Tab:AddButton({
+	Name = "拆除假的门",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/ZcNPGJfQ"))()
+	end
+})
+
 Tab:AddButton({
 	Name = "手电筒（没电会有bug）",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))()
 end
 })      
- 
+
+ Tab:AddButton({
+	Name = "全亮",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+	end
+})
+
+Tab:AddToggle({
+	Name = "无火",
+	Default = false,
+    Flag = "NoSeek",
+    Save = true
+})
+
+Tab:AddToggle({
+	Name = "立即互动",
+	Default = false,
+    Flag = "InstantToggle",
+    Save = true
+})
+
+Tab:AddButton({
+	Name = "无突脸",
+	Callback = function()
+        pcall(function()
+            game:GetService("ReplicatedStorage").Bricks.Jumpscare:Destroy()
+        end)
+  	end    
+})
 Tab:AddButton({
   Name = "极端模式",
   Callback = function()
