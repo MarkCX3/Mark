@@ -41,7 +41,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "人机脚本", HidePremium = false, SaveConfig = true,IntroText = "人机脚本", ConfigFolder = "人机脚本"})
+local Window = OrionLib:MakeWindow({Name = "第二代人机脚本", HidePremium = false, SaveConfig = true,IntroText = ""第二代人机脚本", ConfigFolder = ""第二代人机脚本"})
 OrionLib:MakeNotification({
   Name = "密码正确，欢迎使用脚本",
   Content = "当前游戏ID为:" .. game.GameId .. ".",
@@ -259,6 +259,12 @@ Tab:AddButton({
   Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
  end
+})
+Tab:AddButton({
+  Name = "blox Fruits"
+  Callback = function()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BloxFruits"),true))()
+end
 })
 Tab:AddButton({
 	Name = "后室",
