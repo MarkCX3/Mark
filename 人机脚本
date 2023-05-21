@@ -623,52 +623,6 @@ Tab:AddToggle({
 	end,
 })
 
-Tab:AddToggle({
-    Name = "无视 Glitch",
-	CurrentValue = false,
-	Flag = "IgnoreGlitch",
-	Callback = function(Value)
-        EnabledEntities.EnabledGlitch = Value
-	end,
-})
-
-Tab:AddToggle({
-    Name = "无视 Halt",
-	CurrentValue = false,
-	Flag = "IgnoreHalt",
-	Callback = function(Value)
-        EnabledEntities.EnabledHalt = Value
-	end,
-})
-
-workspace.Camera.ChildAdded:Connect(function(c)
-    if c.Name == "Screech" then
-        wait(0.1)
-        if EnabledEntities.EnabledScreech then
-            removeDebris(c, 0)
-        end
-    end
-
-    if c.Name == "Shade" then
-        wait(.1)
-        if EnabledEntities.EnabledHalt then
-            removeDebris(c, 0)
-        end
-    end
-end)
-
-workspace.CurrentRooms.ChildAdded:Connect(function()
-    if EnabledEntities.EnabledGlitch then
-        local currentRoom=game.Players.LocalPlayer:GetAttribute("CurrentRoom")
-        local roomAmt=#workspace.CurrentRooms:GetChildren()
-        local lastRoom=game.ReplicatedStorage.GameData.LatestRoom.Value
-    
-        if roomAmt>=4 and currentRoom<lastRoom-3 then
-            game.Players.LocalPlayer.Character:PivotTo(CFrame.new(lastRoom.RoomStart.Position))
-        end    
-    end
-end)
-
 Tab:AddButton({
 	Name = "神圣手雷（炸到自己黑屏）",
 	Callback = function()
@@ -765,6 +719,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/07P53fFE"))()
   end
 })
+
 local Tab = Window:MakeTab({
   Name = "脚本集(会覆盖)",
   Icon = "rbxassetid://4483345998",
