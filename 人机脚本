@@ -613,16 +613,6 @@ Tab:AddButton({
     local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
   end
 })
-
-Tab:AddToggle({
-    Name = "无视 Screech",
-	CurrentValue = false,
-	Flag = "IgnoreScreech",
-	Callback = function(Value)
-        EnabledEntities.EnabledScreech = Value
-	end,
-})
-
 Tab:AddButton({
 	Name = "神圣手雷（炸到自己黑屏）",
 	Callback = function()
