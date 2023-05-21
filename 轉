@@ -584,7 +584,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "栏目无伤害（可观赏）",
+	Name = "刷怪无伤害",
 	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
@@ -3900,7 +3900,7 @@ Tab:AddButton({
 
 
 local Tab = Window:MakeTab({
-	Name = "栏目有伤害（不翻译了）",
+	Name = "刷怪有伤害（自个翻译）",
 	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
