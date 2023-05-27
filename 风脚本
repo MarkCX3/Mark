@@ -123,11 +123,6 @@ other:AddButton({
 	StopFly.Name = "Stop Fly"
 	StopFly.Parent = ScreenGui
 	StopFly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-
-不简单的晚风 19:37:40
-这是第二段
-
-不简单的晚风 19:37:41
 StopFly.Position = UDim2.new(0.695689976, 0, 0.0213903747, 0)
 	StopFly.Size = UDim2.new(0, 71, 0, 50)
 	StopFly.Font = Enum.Font.SourceSans
