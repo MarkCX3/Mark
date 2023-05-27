@@ -1,0 +1,80 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = true,IntroText = "风脚本", ConfigFolder = "通用脚本"})
+
+local player = Window:MakeTab({
+	Name = "玩家",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+player:AddTextbox({
+	Name = "移动速度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+player:AddTextbox({
+	Name = "跳跃高度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+player:AddButton({
+	Name = "穿墙",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/jvyN5hT8"))()
+  	end
+})
+
+player:AddButton({
+	Name = "飞行",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+  	end
+})
+
+local other = Window:MakeTab({
+    Name = "其他",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+other:AddButton({
+	Name = "透视(没有用)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/MA8jhPWT"))()
+  	end
+})
+
+other:AddButton({
+	Name = "甩人(超没用)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/uJaFG8wH"))()
+  	end
+})
+
+other:AddButton({
+	Name = "吸人(仅自己能看见)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/kaxAJ5tY"))()
+  	end
+})
+
+local about = Window:MakeTab({
+    Name = "关于",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("作者","晚风")
+
+about:AddParagraph("QQ","2194926282")
+
+OrionLib:Init()
