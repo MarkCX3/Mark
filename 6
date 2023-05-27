@@ -1,37 +1,3 @@
-ocal CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "确认身份",
-    Text = "正在验证....",
-    Duration = 5, --时间
-})
-
-local a=tostring(game.Players.LocalPlayer.Character);
-
-if a=="songxxs"then
-_G.人机=true
-end
-if _G.人机==true then
-    local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "验证结果",
-    Text = a.."验证身份成功",
-    Duration = 5,
-})
-  wait(3) --等待三秒
-  --人机脚本
-    else --验证失败执行↓
-setclipboard("QQ群760162062")
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "验证失败",
-    Text = "你并没有白名单已复制QQ群,加QQ群获得白名单",
-    Duration = 10, --时间
-})
-end
-
 function  SCRIPT()
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -7412,3 +7378,36 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
   	end    
 })
+ocal CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 5, --时间
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="songxxs"then
+_G.人机=true
+end
+if _G.人机==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果",
+    Text = a.."验证身份成功",
+    Duration = 5,
+})
+  wait(3) --等待三秒
+  --人机脚本
+    else --验证失败执行↓
+setclipboard("QQ群760162062")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "你并没有白名单已复制QQ群,加QQ群获得白名单",
+    Duration = 10, --时间
+})
+end
