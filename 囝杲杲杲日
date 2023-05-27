@@ -7235,13 +7235,6 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
-	Name = "不可能模式",
-	Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
-  	end
-})
-
-Tab:AddButton({
   Name = "极端模式",
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
