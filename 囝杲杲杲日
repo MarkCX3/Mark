@@ -7235,6 +7235,42 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
+	Name = "不可能模式",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+  	end
+})
+Tab:AddButton({
+	Name = "Endless模式",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
+  	end
+})
+Tab:AddButton({
+	Name = "物品复制枪",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/EverythingGunByNeRD.lua"))()
+  	end
+})
+Tab:AddButton({
+	Name = "控制物品大小枪",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
+  	end
+})
+Tab:AddButton({
+	Name = "香蕉枪(可在困难模式发射香蕉)",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+  	end
+})
+Tab:AddButton({
+	Name = "手持臭猫",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
+  	end
+})
+Tab:AddButton({
   Name = "极端模式",
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
