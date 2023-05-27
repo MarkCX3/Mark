@@ -268,6 +268,12 @@ Tab:AddButton({
   	end    
 })
 Tab:AddButton({
+  Name = "入侵者"
+  Callback = function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/FGjjwm6W"))()
+end
+})
+Tab:AddButton({
   Name = "bf",
   Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
