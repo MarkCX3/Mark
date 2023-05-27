@@ -7247,18 +7247,6 @@ Tab:AddButton({
   	end
 })
 Tab:AddButton({
-	Name = "物品复制枪",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/EverythingGunByNeRD.lua"))()
-  	end
-})
-Tab:AddButton({
-	Name = "控制物品大小枪",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
-  	end
-})
-Tab:AddButton({
 	Name = "香蕉枪(可在困难模式发射香蕉)",
 	Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
