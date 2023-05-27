@@ -7242,20 +7242,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Endless模式",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "香蕉枪(可在困难模式发射香蕉)",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
-  	end
-})
-
-Tab:AddButton({
   Name = "极端模式",
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
