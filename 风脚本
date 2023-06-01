@@ -1,4 +1,3 @@
-不简单的晚风 下午 8:38:25
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = true,IntroText = "风脚本", ConfigFolder = "风脚本"})
@@ -117,10 +116,6 @@ other:AddButton({
   	end
 })
 
-不简单的晚风 下午 8:38:49
-第二部分
-
-不简单的晚风 下午 8:38:50
 local other = Window:MakeTab({
     Name = "造船寻宝",
     Icon = "rbxassetid://4483345998",
@@ -232,7 +227,6 @@ other:AddButton({
 
 	S.Name = "S"
 
-不简单的晚风 下午 8:39:07
 S.Parent = ScreenGui
 	S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	S.Position = UDim2.new(0.161668837, 0, 0.735294104, 0)
