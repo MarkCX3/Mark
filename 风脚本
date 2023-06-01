@@ -1,3 +1,4 @@
+不简单的晚风 下午 8:38:25
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = true,IntroText = "风脚本", ConfigFolder = "风脚本"})
@@ -74,6 +75,52 @@ other:AddButton({
   	end
 })
 
+other:AddButton({
+	Name = "神圣手雷",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+  	end
+})
+
+other:AddButton({
+	Name = "龙脚本",
+	Callback = function()
+      	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\108\121\121\97\105\110\105\47\108\111\110\47\109\97\105\110\47\108\105\115\119\109\34\41\41\40\41")()
+  	end
+})
+
+other:AddButton({
+	Name = "封印物体十字架",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "夜视仪",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+  	end
+})
+
+other:AddButton({
+	Name = "微山",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+  	end
+})
+
+other:AddButton({
+	Name = "自动rooms(别动移动)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://" .. "raw.githubusercontent.com/DaRealGeo/roblox/master/rooms-autowalk"))()
+  	end
+})
+
+不简单的晚风 下午 8:38:49
+第二部分
+
+不简单的晚风 下午 8:38:50
 local other = Window:MakeTab({
     Name = "造船寻宝",
     Icon = "rbxassetid://4483345998",
@@ -120,13 +167,13 @@ other:AddButton({
 		HumanoidRP:FindFirstChildOfClass("BodyGyro"):Destroy()
 	end)
 
-	StopFly.Name = "Stop Fly"
+	StopFly.Name = "定住"
 	StopFly.Parent = ScreenGui
 	StopFly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-StopFly.Position = UDim2.new(0.695689976, 0, 0.0213903747, 0)
+	StopFly.Position = UDim2.new(0.695689976, 0, 0.0213903747, 0)
 	StopFly.Size = UDim2.new(0, 71, 0, 50)
 	StopFly.Font = Enum.Font.SourceSans
-	StopFly.Text = "Stop fly"
+	StopFly.Text = "定住"
 	StopFly.TextColor3 = Color3.fromRGB(170, 0, 255)
 	StopFly.TextScaled = true
 	StopFly.TextSize = 14.000
@@ -184,7 +231,9 @@ StopFly.Position = UDim2.new(0.695689976, 0, 0.0213903747, 0)
 
 
 	S.Name = "S"
-	S.Parent = ScreenGui
+
+不简单的晚风 下午 8:39:07
+S.Parent = ScreenGui
 	S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	S.Position = UDim2.new(0.161668837, 0, 0.735294104, 0)
 	S.Size = UDim2.new(0, 58, 0, 50)
@@ -211,3 +260,27 @@ StopFly.Position = UDim2.new(0.695689976, 0, 0.0213903747, 0)
   	end
 })
 
+other:AddButton({
+	Name = "刷钱(建议在刷钱的时候花掉)",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+  	end
+})
+
+other:AddButton({
+	Name = "无限方块",
+	Callback = function()
+      	spawn(function()
+local guiinf = game:GetService("Players").LocalPlayer.PlayerGui.BuildGui.InventoryFrame.ScrollingFrame.BlocksFrame
+_G.Blocks = false
+while game:GetService("RunService").RenderStepped:wait() do
+   if _G.Blocks then return end
+       for i,v in pairs(guiinf:GetDescendants()) do
+               if v.Name == "AmountText" then
+               v.Text = math.huge
+           end
+       end
+   end
+end)
+  	end
+})
