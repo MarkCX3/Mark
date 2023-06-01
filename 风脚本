@@ -226,8 +226,7 @@ other:AddButton({
 
 
 	S.Name = "S"
-
-S.Parent = ScreenGui
+	S.Parent = ScreenGui
 	S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	S.Position = UDim2.new(0.161668837, 0, 0.735294104, 0)
 	S.Size = UDim2.new(0, 58, 0, 50)
@@ -235,7 +234,8 @@ S.Parent = ScreenGui
 	S.Text = "下"
 	S.TextColor3 = Color3.fromRGB(255, 255, 255)
 	S.TextScaled = true
-	S.TextSize = 14.000
+
+S.TextSize = 14.000
 	S.TextWrapped = true
 	S.MouseButton1Down:Connect(function()
 		HumanoidRP.Anchored = false
@@ -278,3 +278,4 @@ while game:GetService("RunService").RenderStepped:wait() do
 end)
   	end
 })
+
