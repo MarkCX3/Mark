@@ -1,4 +1,3 @@
-不简单的晚风 下午 2:51:21
 local CoreGui = game:GetService("StarterGui")   
 
  CoreGui:SetCore("SendNotification", {      Title = "警告出什么事跟我无关",      Text = "我是ℳ̶̶̶̶♡̶҉晚风ℳᥫᩣ",
@@ -174,7 +173,6 @@ player:AddButton({
 		BG.D = 5000
 		BG.P = 50000
 
-不简单的晚风 下午 2:51:25
 BG.CFrame = game.Workspace.CurrentCamera.CFrame
 		BV.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
 		BV.Velocity = game.Workspace.CurrentCamera.CFrame.LookVector * -Speed
@@ -214,4 +212,3 @@ about:AddParagraph("作者","ℳ̶̶̶̶♡̶҉晚风ℳᥫᩣ")
 about:AddParagraph("快手号","2435699056")
 
 OrionLib:Init()
-
