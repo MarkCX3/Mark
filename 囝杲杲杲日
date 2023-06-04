@@ -7355,7 +7355,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/HrXgGiND"))()
 end
 })
 Tab:AddButton({
-	Name = "全(英文??)",
+	Name = "全(英文🌚)",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/kEq7bdf9"))()
 end
