@@ -1,12 +1,6 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 local Window = OrionLib:MakeWindow({Name = "奕泽二改脚本", HidePremium = false, SaveConfig = true,IntroText = "奕泽二改脚本", ConfigFolder = "奕泽二改脚本"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "奕泽二改脚本"; Text ="奕泽二改脚本"; Duration = 4; })
-OrionLib:MakeNotification({
-  Name = "密码正确，欢迎使用脚本",
-  Content = "当前游戏ID为:" .. game.GameId .. ".",
-  Image = "rbxassetid://7734068321",
-  Time = 10
-})
 local Tab = Window:MakeTab({
   Name = "必看",
   Icon = "rbxassetid://4483345998",
@@ -27,13 +21,6 @@ Tab:AddButton({
     end)
   end
 })
-Tab:AddButton({
-  Name = "免robus购买（娱乐）",
-  Callback = function()
-    local gui = Instance.new('ScreenGui', game:service'CoreGui')local button = Instance.new('TextButton', gui)button.Size = UDim2.new(0, 200, 0, 100)button.Position = UDim2.new(.5, 0, .5, 0)button.Text = 'infinite robux real'button.MouseButton1Click:Connect(loadstring(game:HttpGet'https://github.com/RunDTM/roblox-bluescreen/raw/main/bsod.lua'))
-  end
-})
- 
 Tab:AddButton({
 	Name = "复制QQ号",
 	Callback = function()
