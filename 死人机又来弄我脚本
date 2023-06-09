@@ -798,4 +798,8 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
   	end    
-})
+})--卡密正确后的脚本
+end
+getgenv().key = "114514" --卡密
+getgenv().find = "加作者qq3334964" --联系作者什么的
+loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
