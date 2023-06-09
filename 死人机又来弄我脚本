@@ -1,5 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "“二改脚本”", HidePremium = false, SaveConfig = true,IntroText = "“二改脚本”", ConfigFolder = "“二改脚本”
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/ui"))
 local Tab = Window:MakeTab({
   Name = "必看",
   Icon = "rbxassetid://4483345998",
