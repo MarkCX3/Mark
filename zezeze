@@ -166,7 +166,7 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-  Name = "在51区生存",
+  Name = "51区",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
  end
