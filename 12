@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
-local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = false, ConfigFolder = "Amireux脚本"})
+local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = false, IntroText = Amireux脚本", ConfigFolder = "Amireux脚本"})
 local Tab = Window:MakeTab({
   Name = "必看",
   Icon = "rbxassetid://4483345998",
@@ -54,6 +54,12 @@ Tab:AddButton({
 	Name = "厕所模拟器",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/misc-scripts/main/public_bathroom_crasher.lua'))()
+end
+})
+Tab:AddButton({
+  Name = "在51区生存"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
 end
 })
 Tab:AddButton({
