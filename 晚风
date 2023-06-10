@@ -112,6 +112,12 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, ConfigFolder = "风脚本"})
+OrionLib:MakeNotification({
+  Name = "密码正确，欢迎使用",
+  Content = "当前游戏ID为:" .. game.GameId .. ".",
+  Image = "rbxassetid://7734068321",
+  Time = 10
+})
 local Tab = Window:MakeTab({
   Name = "公告🤓",
   Icon = "rbxassetid://4483345998",
