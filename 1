@@ -1,0 +1,64 @@
+local ScreenGui = lnstance.new("ScreenGui")
+local Frame = lnstance.new("Frame")
+local ato = lnstance.new("TextButton")
+
+ScreenGui.parent = game.CoreGui
+
+frame.Name = "freame"
+frame.Parent = ScreenGui
+frame.BackgroundColor3 = Color3
+  fromRGB(248,248,248)
+frame.Position = UDim2.new(0.326148063,0,0.29880476,0)
+frame.Size = UDim2.new(0, 392, 0, 500)
+frame.Active = ture
+frame.Draggable = ture
+local Tab = Window:MakeTab({
+  Name = "必看",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+Tab:AddParagraph("更新FE脚本，宠物模拟器X和后室还有doors的一些功能")
+Tab:AddParagraph("借用了一些源码，勿喷")
+Tab:AddParagraph("一定要反挂机"," ")
+Tab:AddButton({
+  Name = "反挂机（一定要，不一定）",
+  Callback = function()
+    print("Anti Afk On")
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+      vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+      wait(1)
+      vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+  end
+})
+Tab:AddButton({
+	Name = "复制QQ号",
+	Callback = function()
+setclipboard("3334964")
+end
+})  
+ 
+Tab:AddButton({
+	Name = "QQ反映群",
+	Callback = function()
+setclipboard("794550123")
+end
+})      
+local Tab = Window:MakeTab({
+  Name = "单独服务器脚本",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "巴掌模拟器",
+  Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
+  end
+})
+Tab:AddButton({
+  Name = "bf",
+  Callback = function()
+    oadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Mobile-Loader"))()
+  end
+})
