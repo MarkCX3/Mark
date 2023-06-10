@@ -170,6 +170,9 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
  end
 })
+Tab:AddButton({	Name = "监狱人生2",	Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/6kRVJBcy'))()
+end
+})
 Tab:AddButton({
 	Name = "3008",
 	Callback = function()
