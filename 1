@@ -1,12 +1,5 @@
-local a=tostring(game.Players.LocalPlayer.Character);
-if a=="songxxs"then
-_G.QB=true
-elseif a=="ikun14151"then
-_G.QB=true
-end
-if _G.QB==true then
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "你已加入白名单", HidePremium = false, SaveConfig = false, IntroText = Amireux脚本", ConfigFolder = "Amireux脚本"})
+local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = false, IntroText = Amireux脚本", ConfigFolder = "Amireux脚本"})
 OrionLib:MakeNotification({
 	Name = "欢迎使用Amireux脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
@@ -1445,8 +1438,3 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
   	end    
 })
-OrionLib:Init()
-else
- 
-game.Players.LocalPlayer:Kick(a.."你没有被列入白名单请联系3334964")
-end
