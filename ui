@@ -4,7 +4,7 @@ local ato = lnstance.new("TextButton")
 
 ScreenGui.parent = game.CoreGui
 
-frame.Name = "人机"
+frame.Name = "frame"
 frame.Parent = ScreenGui
 frame.BackgroundColor3 = Color3
   fromRGB(248,248,248)
