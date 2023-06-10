@@ -1,14 +1,3 @@
-local ScreenGui = lnstance.new("ScreenGui")
-local Frame = lnstance.new("Frame")
-local ato = lnstance.new("TextButton")
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
 
-ScreenGui.parent = game.CoreGui
-
-frame.Name = "frame"
-frame.Parent = ScreenGui
-frame.BackgroundColor3 = Color3
-  fromRGB(248,248,248)
-frame.Position = UDim2.new(0.326148063,0,0.29880476,0)
-frame.Size = UDim2.new(0, 392, 0, 500)
-frame.Active = ture
-frame.Draggable = ture
+local Window = OrionLib:MakeWindow({Name = "HUA脚本Alpha测试版", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用HUA Alpha Test  ", ConfigFolder = "HUA脚本"})
