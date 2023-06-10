@@ -1,5 +1,11 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
 local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "Amireux脚本"})
+OrionLib:MakeNotification({
+	Name = "欢迎使用QB脚本",
+	Content =  "当前游戏ID为:" .. game.GameId .. ".",
+	Image = "rbxassetid://7734068321",
+	Time = 5
+})
 local Tab = Window:MakeTab({
   Name = "必看",
   Icon = "rbxassetid://4483345998",
@@ -567,6 +573,46 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
   end
 })
+local KeyChams = {}
+Tab:AddToggle({
+	Name = "钥匙显示",
+	Default = false,
+    Flag = "KeyToggle",
+    Save = true,
+	Callback = function(Value)
+		for i,v in pairs(KeyChams) do
+            v.Enabled = Value
+        end
+	end    
+})
+
+local function ApplyKeyChams(inst)
+    wait()
+    local Cham = Instance.new("Highlight")
+    Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    Cham.FillColor = Color3.new(0.980392, 0.670588, 0)
+    Cham.FillTransparency = 0.5
+    Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
+    Cham.Parent = game:GetService("CoreGui")
+    Cham.Adornee = inst
+    Cham.Enabled = OrionLib.Flags["KeyToggle"].Value
+    Cham.RobloxLocked = true
+    return Cham
+end
+
+local KeyCoroutine = coroutine.create(function()
+    workspace.CurrentRooms.DescendantAdded:Connect(function(inst)
+        if inst.Name == "KeyObtain" then
+            table.insert(KeyChams,ApplyKeyChams(inst))
+        end
+    end)
+end)
+for i,v in ipairs(workspace:GetDescendants()) do
+    if v.Name == "KeyObtain" then
+        table.insert(KeyChams,ApplyKeyChams(v))
+    end
+end
+coroutine.resume(KeyCoroutine)
 Tab:AddButton({
   Name = "剪刀",
   Callback = function()
