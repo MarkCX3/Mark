@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, ConfigFolder = "风脚本"})
 local Tab = Window:MakeTab({
-  Name = "必看",
+  Name = "公告🤓",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
