@@ -134,7 +134,6 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
   end
 })
-
 Tab:AddButton({
   Name = "破坏者迷团",
   Callback = function()
@@ -191,12 +190,6 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
 end
-})
-Tab:AddButton({
-  Name = "俄亥俄州",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
- end
 })
 Tab:AddButton({
 	Name = "后室",
