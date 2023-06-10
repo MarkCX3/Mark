@@ -134,12 +134,7 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
   end
 })
-Tab:AddButton({
-  Name = "动作",
-  Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main2"))()
- end
-})
+
 Tab:AddButton({
   Name = "破坏者迷团",
   Callback = function()
@@ -814,6 +809,12 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/HrXgGiND"))()
 end
+})
+Tab:AddButton({
+  Name = "动作2",
+  Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main2"))()
+ end
 })
 Tab:AddButton({
 	Name = "全(英文🌚)",
