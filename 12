@@ -99,15 +99,9 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-  Name = "兵工厂1",
+  Name = "兵工厂",
   Callback = function()
 	loadstring(game:HttpGet('http://pan.rlyun.asia/api/v3/file/get/15369/%E4%B9%92%E5%B7%A5%E5%8E%82?sign=pDWgMBQ_m8pjcTS9-o8N1zvCmYmc6LsQVjeDaypp0bw%3D%3A0'))()
- end
-})
-Tab:AddButton({
-  Name = "兵工厂2",
-  Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
  end
 })
 Tab:AddButton({
