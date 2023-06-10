@@ -166,6 +166,12 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+  Name = "在51区生存",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
+ end
+})
+Tab:AddButton({
   Name = "监狱人生",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
@@ -191,12 +197,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
  end
-})
-Tab:AddButton({
-	Name = "俄亥俄州2",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
-end
 })
 Tab:AddButton({
 	Name = "后室",
