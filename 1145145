@@ -1,0 +1,2 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
+local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = false, IntroText = Amireux脚本", ConfigFolder = "Amireux脚本"})
