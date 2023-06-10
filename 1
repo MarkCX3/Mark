@@ -69,7 +69,13 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "彩虹朋友1",
+  Name = "bf",
+  Callback = function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+ end
+})
+Tab:AddButton({
+  Name = "彩虹朋友",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
   end
@@ -105,12 +111,6 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-  Name = "力量传奇",
-  Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))() 
- end
-})
-Tab:AddButton({
   Name = "忍者传奇",
   Callback = function()
     pcall(loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")))
@@ -138,12 +138,6 @@ Tab:AddButton({
   Name = "动作",
   Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main2"))()
- end
-})
-Tab:AddButton({
-  Name = "bf",
-  Callback = function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
  end
 })
 Tab:AddButton({
@@ -301,13 +295,6 @@ Tab:AddToggle({
      else
       game.Lighting.Ambient = Color3.new(0, 0, 0)
     end
-  end
-})
-Tab:AddButton({
-  Name = "阿尔宙斯UI",
-  Default = false,
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   end
 })
 Tab:AddButton({
