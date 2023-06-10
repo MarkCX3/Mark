@@ -1,11 +1,5 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "Amireux脚本", HidePremium = false, SaveConfig = false, IntroText = Amireux脚本", ConfigFolder = "Amireux脚本"})
-OrionLib:MakeNotification({
-	Name = "欢迎使用Amireux脚本",
-	Content =  "当前游戏ID为:" .. game.GameId .. ".",
-	Image = "rbxassetid://7734068321",
-	Time = 5
-})
 local Tab = Window:MakeTab({
   Name = "必看",
   Icon = "rbxassetid://4483345998",
@@ -51,19 +45,37 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
+  Name = "巨人模拟器",
+  Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/Giant%20Simulator%20Auto%20Rebirth.lua'))()
+ end
+})
+Tab:AddButton({
+	Name = "厕所模拟器",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/misc-scripts/main/public_bathroom_crasher.lua'))()
+end
+})
+Tab:AddButton({
+  Name = "自然灾害模拟器",
+  Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))() 
+ end
+})
+Tab:AddButton({
   Name = "bf",
   Callback = function()
     oadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Mobile-Loader"))()
   end
 })
 Tab:AddButton({
-  Name = "彩虹朋友",
+  Name = "彩虹朋友1",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
   end
 })
 Tab:AddButton({
-    Name="彩虹朋友",
+    Name="彩虹朋友3",
     Callback=function()      loadstring(game:HttpGet('https://raw.githubusercontent.com/Sempiller/RainbowTool/main/Turkish.lua'))();
     end
 })
@@ -86,9 +98,15 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-  Name = "兵工厂",
+  Name = "兵工厂1",
   Callback = function()
 	loadstring(game:HttpGet('http://pan.rlyun.asia/api/v3/file/get/15369/%E4%B9%92%E5%B7%A5%E5%8E%82?sign=pDWgMBQ_m8pjcTS9-o8N1zvCmYmc6LsQVjeDaypp0bw%3D%3A0'))()
+ end
+})
+Tab:AddButton({
+  Name = "兵工厂2",
+  Callback = function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
  end
 })
 Tab:AddButton({
@@ -110,6 +128,18 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+	Name = "健壮传奇",
+	Callback = function()
+loadstring(game:HttpGet('https://ghostbin.co/paste/ctpa/raw'))()
+	end
+})
+Tab:AddButton({
+	Name = "力量传奇脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
+end
+})
+Tab:AddButton({
   Name = "伐木大亨",
   Callback = function()
     loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
@@ -122,7 +152,7 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-  Name = "海贼王",
+  Name = "bf",
   Callback = function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
  end
@@ -131,12 +161,6 @@ Tab:AddButton({
   Name = "破坏者迷团",
   Callback = function()
     loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
- end
-})
-Tab:AddButton({
-  Name = "兵工厂",
-  Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
  end
 })
 Tab:AddButton({
@@ -152,46 +176,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4Fo
 end
 })
 Tab:AddButton({
-  Name = "巨人模拟器",
-  Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/Giant%20Simulator%20Auto%20Rebirth.lua'))()
- end
-})
-Tab:AddButton({
   Name = "战斗勇士",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
  end
 })
 Tab:AddButton({
-	Name = "厕所模拟器",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/misc-scripts/main/public_bathroom_crasher.lua'))()
-end
-})
-Tab:AddButton({
-	Name = "健壮传奇",
-	Callback = function()
-loadstring(game:HttpGet('https://ghostbin.co/paste/ctpa/raw'))()
-	end
-})
-Tab:AddButton({
   Name = "HOHO",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()
  end
-})
-Tab:AddButton({
-  Name = "自然灾害模拟器",
-  Callback = function()
-loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))() 
- end
-})
-Tab:AddButton({
-	Name = "自然灾害",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
-end
 })
 Tab:AddButton({
   Name = "监狱人生",
@@ -212,18 +206,6 @@ loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
 end
 })
 Tab:AddButton({
-	Name = "力量传奇脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
-end
-})
-Tab:AddButton({
-	Name = "监狱人生v1.3",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
-end
-})
-Tab:AddButton({
 	Name = "俄亥俄州",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
@@ -236,12 +218,6 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
-	Name = "披萨店食物乱飞",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/TQwh73Dx"))();
-end
-})
-Tab:AddButton({
 	Name = "后室",
 	Callback = function()
      loadstring(game:HttpGet('https://pastebin.com/raw/Gsqd40fL'))()
@@ -252,12 +228,6 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
   	end    
-})
-Tab:AddButton({
-  Name = "bf",
-  Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua'))()
- end
 })
 local Tab = Window:MakeTab({
     Name = "监狱人生",
@@ -368,64 +338,6 @@ Tab:AddButton({
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
-  	end    
-})
-
-
-local Tab = Window:MakeTab({
-    Name = "力量传奇",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
- 
-Tab:AddButton({
-	Name = "传送到出生点",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
-  	end    
-})
- 
-Tab:AddButton({
-	Name = "传送到冰霜健身房",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2543, 13, -410)
-  	end    
-})
- 
-Tab:AddButton({
-	Name = "传送到神话健身房",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2177, 13, 1070)
-  	end    
-})
-Tab:AddButton({
-	Name = "传送到永恒健身房",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6686, 13, -1284)
-  	end    
-})
-Tab:AddButton({
-	Name = "传送到传说健身房",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4676, 997, -3915)
-  	end    
-})
-Tab:AddButton({
-	Name = "传送到肌肉之王健身房",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8554, 22, -5642)
-  	end    
-})
-Tab:AddButton({
-	Name = "传送到安全岛",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, 10, 1838)
-  	end    
-})
-Tab:AddButton({
-	Name = "传送到幸运抽奖区域",
-	Callback = function()
-      		      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2606, -2, 5753)
   	end    
 })
 
