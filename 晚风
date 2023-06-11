@@ -13,8 +13,6 @@ elseif a=="Candy_phant"then
 _G.QB=true
 end
 if _G.QB==true then
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
-local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = ture, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
@@ -54,6 +52,8 @@ FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and
 CurrentFPS = CurrentFPS - CurrentFPS % 1
   FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
+local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = ture, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
