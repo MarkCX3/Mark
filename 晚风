@@ -13,7 +13,7 @@ elseif a=="Candy_phant"then
 _G.QB=true
 end
 if _G.QB==true then
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = ture, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
@@ -21,7 +21,6 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://7734068321",
 	Time = 5
 })
-
 local Tab = Window:MakeTab({
   Name = "公告🤓",
   Icon = "rbxassetid://4483345998",
