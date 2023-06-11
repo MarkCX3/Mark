@@ -12,7 +12,7 @@ _G.QB=true
 end
 if _G.QB==true then
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "你已加入白名单", HidePremium = false, SaveConfig = ture, IntroText = "风脚本", ConfigFolder = "风脚本"})
+local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = ture, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
