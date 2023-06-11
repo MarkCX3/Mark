@@ -204,7 +204,7 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "DOORS",
+        Name = "doors脚本"
 	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
@@ -272,276 +272,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
 end
 })  
-local Tab = Window:MakeTab({
-  Name = "通用",
-  Icon = "rbxassetid://4483345998",
-  PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "加速能量条",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
-  end
-})
-Tab:AddToggle({
-  Name = "夜视",
-  Default = false,
-  Callback = function(Value)
-    if Value then
-      game.Lighting.Ambient = Color3.new(1, 1, 1)
-     else
-      game.Lighting.Ambient = Color3.new(0, 0, 0)
-    end
-  end
-})
-Tab:AddButton({
-	Name = "无限跳",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
-    end
-})
-Tab:AddButton({
-  Name = "飞行",
-  Callback = function()
-    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
-  end
-})
-Tab:AddButton({
-  Name = "飞行装备（可控制物体）",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan2"))()
-  end
-})
-Tab:AddButton({
-  Name = "键盘",
-  Default = false,
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-  end
-})
-Tab:AddButton({
-	Name = "飞行工具，可带动其他东西，比如自然灾害的火箭，需要键盘",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/hrf3iyyi"))()
-end
-})    
- 
-Tab:AddParagraph("光影均无法关闭","只可替换与叠加")
-Tab:AddButton({
-  Name = "光影（滤镜）",
-  Default = false,
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-  end
-})
- 
-Tab:AddButton({
-  Name = "美丽天空（带动态阴影）",
-  Callback = function()
-    -- Roblox Graphics Enhancher
-    local light = game.Lighting
-    for i, v in pairs(light:GetChildren()) do
-      v:Destroy()
-    end
- 
-    local ter = workspace.Terrain
-    local color = Instance.new("ColorCorrectionEffect")
-    local bloom = Instance.new("BloomEffect")
-    local sun = Instance.new("SunRaysEffect")
-    local blur = Inst
-  end
-})
-Tab:AddButton({
-  Name = "自动旋转",
-  Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  end
-})
-Tab:AddTextbox({
-  Name = "移动速度",
-  Default = "",
-  TextDisappear = true,
-  Callback = function(Value) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-  end
-})
-Tab:AddTextbox({
-  Name = "跳跃高度",
-  Default = "",
-  TextDisappear = true,
-  Callback = function(Value) game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-  end
-})
-Tab:AddTextbox({
-  Name = "重力设置",
-  Default = "",
-  TextDisappear = true,
-  Callback = function(Value)
-    game.Workspace.Gravity = Value
-  end
-})
- 
-Tab:AddButton({
-  Name = "隐身道具",
-  Callback = function()
-    loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
-  end
-})
-Tab:AddButton({
-  Name = "不会屏蔽的消息发送器",
-  Default = false,
-  Callback = function(Value)
-    loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
-  end
-})
-Tab:AddButton({
-  Name = "回满血（自慰）",
-  Callback = function ()
-    FullHealth = 100
-    game.Players.LocalPlayer.Character.Humanoid.Health = FullHealth
-  end
-})
-Tab:AddButton({
-	Name = "飞车",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
-	end
-})
-Tab:AddButton({
-	Name = "甩飞",
-	Callback = function() 
-loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
-	end
-})
-Tab:AddToggle({
-  Name = "穿墙",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
-})
-Tab:AddButton({
-	Name = "跟踪玩家",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
-  	end
-})
-Tab:AddButton({
-	Name = "伪名说话",
-	Callback = function()
-loadstring(game:HttpGet(('https://pastefy.ga/zCFEwaYq/raw'),true))()
-	end 
-})
-Tab:AddButton({
-	Name = "踏空行走",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-	end
-})
-Tab:AddTextbox({
-	Name = "透视",
-	Callback = function()
-		loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
-	end
-})
-Tab:AddButton({
-	Name = "超多??",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/LwQkm563"))();
-end
-})
-Tab:AddButton({
-	Name = "爬墙",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-end
-})
-Tab:AddButton({
-	Name = "光影V4(点一下就行了，点多了会重合)",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-end
-})
-Tab:AddButton({	
-  Name = "调整碰撞箱(英文)",	
-  Callback = function()
-  loadstring(game:HttpGet("https://pastebin.com/raw/ZQMVNxkT"))()
-  end
- })
-Tab:AddButton({
-  Name = "变小15r",	
-   Callback = function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/XV8zfvD2"))()
-   end
-  })
-Tab:AddButton({	
-Name = "绘制透视名字显示",	
-Callback = function()	
-loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/tou"))()  	
-end
-})
-Tab:AddButton({	
-  Name = "跑墙",	
-  Callback = function()
-  loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-  end
- })
-Tab:AddButton({	
-  Name = "悬浮",	
-  Callback = function()
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()	
-  end
-})
-Tab:AddButton({	
-  Name = "吸人",	
-  Callback = function()     
-  loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
-  end    
- })
-local Tab = Window:MakeTab({
-	Name = "脚本",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "黑客脚本",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
-end
-})
-
-Tab:AddButton({
-	Name = "管理员",
-	Callback = function()
-loadstring(game: HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
-end
-})
-
-Tab:AddButton({
-	Name = "阿尔宙斯V3",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))() 
-end
-})
-
 local Tab = Window:MakeTab({
   Name = "仅DOORS可用脚本",
   Icon = "rbxassetid://10483855823",
@@ -714,6 +444,275 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/07P53fFE"))()
   end
+})
+local Tab = Window:MakeTab({
+  Name = "玩家",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "加速能量条",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
+  end
+})
+Tab:AddToggle({
+  Name = "夜视",
+  Default = false,
+  Callback = function(Value)
+    if Value then
+      game.Lighting.Ambient = Color3.new(1, 1, 1)
+     else
+      game.Lighting.Ambient = Color3.new(0, 0, 0)
+    end
+  end
+})
+Tab:AddButton({
+	Name = "无限跳",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+    end
+})
+Tab:AddButton({
+  Name = "飞行",
+  Callback = function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+  end
+})
+Tab:AddButton({
+  Name = "飞行装备（可控制物体）",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan2"))()
+  end
+})
+Tab:AddButton({
+  Name = "键盘",
+  Default = false,
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  end
+})
+Tab:AddButton({
+	Name = "飞行工具，可带动其他东西，比如自然灾害的火箭，需要键盘",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hrf3iyyi"))()
+end
+})    
+ 
+Tab:AddParagraph("光影均无法关闭","只可替换与叠加")
+Tab:AddButton({
+  Name = "光影（滤镜）",
+  Default = false,
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  end
+})
+ 
+Tab:AddButton({
+  Name = "美丽天空（带动态阴影）",
+  Callback = function()
+    -- Roblox Graphics Enhancher
+    local light = game.Lighting
+    for i, v in pairs(light:GetChildren()) do
+      v:Destroy()
+    end
+ 
+    local ter = workspace.Terrain
+    local color = Instance.new("ColorCorrectionEffect")
+    local bloom = Instance.new("BloomEffect")
+    local sun = Instance.new("SunRaysEffect")
+    local blur = Inst
+  end
+})
+Tab:AddButton({
+  Name = "自动旋转",
+  Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+  end
+})
+Tab:AddTextbox({
+  Name = "移动速度",
+  Default = "",
+  TextDisappear = true,
+  Callback = function(Value) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+  end
+})
+Tab:AddTextbox({
+  Name = "跳跃高度",
+  Default = "",
+  TextDisappear = true,
+  Callback = function(Value) game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+  end
+})
+Tab:AddTextbox({
+  Name = "重力设置",
+  Default = "",
+  TextDisappear = true,
+  Callback = function(Value)
+    game.Workspace.Gravity = Value
+  end
+})
+ 
+Tab:AddButton({
+  Name = "隐身道具",
+  Callback = function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
+  end
+})
+Tab:AddButton({
+  Name = "不会屏蔽的消息发送器",
+  Default = false,
+  Callback = function(Value)
+    loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
+  end
+})
+Tab:AddButton({
+  Name = "回满血（自慰）",
+  Callback = function ()
+    FullHealth = 100
+    game.Players.LocalPlayer.Character.Humanoid.Health = FullHealth
+  end
+})
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E9%A3%9E%E8%BD%A6"))()
+	end
+})
+Tab:AddButton({
+	Name = "甩飞",
+	Callback = function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
+	end
+})
+Tab:AddToggle({
+  Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+Tab:AddButton({
+	Name = "跟踪玩家",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+  	end
+})
+Tab:AddButton({
+	Name = "伪名说话",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastefy.ga/zCFEwaYq/raw'),true))()
+	end 
+})
+Tab:AddButton({
+	Name = "踏空行走",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+	end
+})
+Tab:AddTextbox({
+	Name = "透视",
+	Callback = function()
+		loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
+	end
+})
+Tab:AddButton({
+	Name = "超多??",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/LwQkm563"))();
+end
+})
+Tab:AddButton({
+	Name = "爬墙",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end
+})
+Tab:AddButton({
+	Name = "光影V4(点一下就行了，点多了会重合)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+end
+})
+Tab:AddButton({	
+  Name = "调整碰撞箱(英文)",	
+  Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/ZQMVNxkT"))()
+  end
+ })
+Tab:AddButton({
+  Name = "变小15r",	
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/XV8zfvD2"))()
+   end
+  })
+Tab:AddButton({	
+Name = "绘制透视名字显示",	
+Callback = function()	
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/tou"))()  	
+end
+})
+Tab:AddButton({	
+  Name = "跑墙",	
+  Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+  end
+ })
+Tab:AddButton({	
+  Name = "悬浮",	
+  Callback = function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()	
+  end
+})
+Tab:AddButton({	
+  Name = "吸人",	
+  Callback = function()     
+  loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
+  end    
+ })
+local Tab = Window:MakeTab({
+	Name = "脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "黑客脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
+end
+})
+
+Tab:AddButton({
+	Name = "管理员",
+	Callback = function()
+loadstring(game: HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+end
+})
+
+Tab:AddButton({
+	Name = "阿尔宙斯V3",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))() 
+end
 })
 
 local Tab = Window:MakeTab({
