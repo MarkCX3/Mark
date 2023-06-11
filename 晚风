@@ -54,8 +54,6 @@ FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and
 CurrentFPS = CurrentFPS - CurrentFPS % 1
   FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
-Start = tick()
-Heartbeat:Connect(HeartbeatUpdate)
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
