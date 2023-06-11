@@ -14,7 +14,7 @@ _G.QB=true
 end
 if _G.QB==true then
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = ture, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
+local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
@@ -211,7 +211,7 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "DOORS脚本",
+	Name = "DOORS",
 	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
@@ -280,7 +280,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Pub
 end
 })  
 local Tab = Window:MakeTab({
-  Name = "玩家",
+  Name = "通用",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -550,7 +550,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-  Name = "DOORS",
+  Name = "仅DOORS可用脚本",
   Icon = "rbxassetid://10483855823",
   PremiumOnly = false
 })
