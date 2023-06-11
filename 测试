@@ -424,7 +424,7 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
 	end
 })
-Tab:AddToggle({
+player:AddToggle({
 	Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
