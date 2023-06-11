@@ -556,7 +556,7 @@ end
 })
 local other = Window:MakeTab({
     Name = "Doors",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://10483855823",
     PremiumOnly = false
 })
 Tab:AddButton({
