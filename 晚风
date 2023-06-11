@@ -866,5 +866,5 @@ Tab:AddButton({
 OrionLib:Init()
 else
  
-game.Players.LocalPlayer:Kick(a.."你没有被列入白名单请联系2686818083")
+game.Players.LocalPlayer:Kick(a.."你没有被列入白名单请联系3334964")
 end
