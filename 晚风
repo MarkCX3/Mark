@@ -212,6 +212,248 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
+        Name = "doors脚本"
+	Icon = "rbxassetid://10483855823",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "门", 
+  Callback = function()
+    loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
+ end
+})
+Tab:AddButton({
+	Name = "不坤到什么名字",
+	Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+end
+})
+Tab:AddButton({
+	Name = "最强HDS",
+	Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
+	end 
+})
+Tab:AddButton({
+	Name = "XD夜",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "doors变形",
+	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
+	end
+})
+Tab:AddButton({
+	Name = "福利脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+	end
+})
+Tab:AddButton({
+	Name = "超级脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
+end
+})
+Tab:AddButton({
+	Name = "修改",
+	Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+	end
+})
+Tab:AddButton({
+    Name = "全成就【不是真的】不要在大厅使用!!",
+    Callback = function ()
+        local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+        for i,v in pairs(require(game.ReplicatedStorage.Achievements)) do
+            spawn(function()
+                require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.AchievementUnlock)(nil, i)
+            end)
+        end
+    end
+})
+Tab:AddButton({
+	Name = "DOORS变身脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end
+})  
+local Tab = Window:MakeTab({
+  Name = "仅DOORS可用脚本",
+  Icon = "rbxassetid://10483855823",
+  PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "磁铁",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "可以清除东西的枪",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+  end
+})
+ 
+Tab:AddButton({
+  Name = "DOORS低回拉穿墙",
+  Callback = function()
+    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+  end
+})
+local KeyChams = {}
+Tab:AddToggle({
+	Name = "钥匙显示",
+	Default = false,
+    Flag = "KeyToggle",
+    Save = true,
+	Callback = function(Value)
+		for i,v in pairs(KeyChams) do
+            v.Enabled = Value
+        end
+	end    
+})
+
+local function ApplyKeyChams(inst)
+    wait()
+    local Cham = Instance.new("Highlight")
+    Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    Cham.FillColor = Color3.new(0.980392, 0.670588, 0)
+    Cham.FillTransparency = 0.5
+    Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
+    Cham.Parent = game:GetService("CoreGui")
+    Cham.Adornee = inst
+    Cham.Enabled = OrionLib.Flags["KeyToggle"].Value
+    Cham.RobloxLocked = true
+    return Cham
+end
+
+local KeyCoroutine = coroutine.create(function()
+    workspace.CurrentRooms.DescendantAdded:Connect(function(inst)
+        if inst.Name == "KeyObtain" then
+            table.insert(KeyChams,ApplyKeyChams(inst))
+        end
+    end)
+end)
+for i,v in ipairs(workspace:GetDescendants()) do
+    if v.Name == "KeyObtain" then
+        table.insert(KeyChams,ApplyKeyChams(v))
+    end
+end
+coroutine.resume(KeyCoroutine)
+Tab:AddButton({
+  Name = "剪刀",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "骷髅钥匙",
+  Callback = function ()
+    local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
+  end
+})
+Tab:AddButton({
+	Name = "神圣手雷（炸到自己黑屏）",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "万圣节十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Mye123/MyeWareHub/main/Halloween%20Crucifix"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "错误十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Bumble-crucifix/main/Bumble-crucifix"))()
+    end
+}) 
+
+Tab:AddButton({
+	Name = "圣诞节十字架",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Christmas-Crucifix/main/Christmas%20crucifix.lua"))()
+    end
+}) 
+
+Tab:AddButton({
+	Name = "紫色手电筒（在电梯购买东西的时候使用）",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+end
+})  
+ 
+ Tab:AddButton({
+	Name = "拆除假的门",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/ZcNPGJfQ"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "手电筒（没电会有bug）",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))()
+end
+})      
+
+ Tab:AddButton({
+	Name = "全亮",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+	end
+})
+
+Tab:AddToggle({
+	Name = "无火",
+	Default = false,
+    Flag = "NoSeek",
+    Save = true
+})
+
+Tab:AddToggle({
+	Name = "立即互动",
+	Default = false,
+    Flag = "InstantToggle",
+    Save = true
+})
+
+Tab:AddButton({
+	Name = "无突脸",
+	Callback = function()
+        pcall(function()
+            game:GetService("ReplicatedStorage").Bricks.Jumpscare:Destroy()
+        end)
+  	end    
+})
+Tab:AddButton({
+  Name = "极端模式",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
+  end
+})
+Tab:AddButton({
+  Name = "微山",
+  Callback = function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+  end
+})
+Tab:AddButton({
+  Name = "DOORS多脚本",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/07P53fFE"))()
+  end
+})
+local Tab = Window:MakeTab({
   Name = "玩家",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
@@ -250,12 +492,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan2"))()
   end
-})
-Tab:AddButton({
-  Name = "Lnfinite Yield Fe"
-  Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end
 })
 Tab:AddButton({
   Name = "键盘",
@@ -461,7 +697,7 @@ Tab:AddButton({
   loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
   end    
  })
- local Tab = Window:MakeTab({
+local Tab = Window:MakeTab({
 	Name = "脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -485,249 +721,6 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game: HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))() 
 end
-})
-local Tab = Window:MakeTab({
-  Name = "DOORS脚本"
-	Icon = "rbxassetid://10483855823",
-	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "门", 
-  Callback = function()
-    loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
- end
-})
-Tab:AddButton({
-	Name = "不坤到什么名字",
-	Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
-end
-})
-Tab:AddButton({
-	Name = "最强HDS",
-	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
-	end 
-})
-Tab:AddButton({
-	Name = "XD夜",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
-	end
-})
-Tab:AddButton({
-	Name = "doors变形",
-	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
-	end
-})
-Tab:AddButton({
-	Name = "福利脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-	end
-})
-Tab:AddButton({
-	Name = "超级脚本",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
-end
-})
-Tab:AddButton({
-	Name = "修改",
-	Callback = function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
-	end
-})
-Tab:AddButton({
-    Name = "全成就【不是真的】不要在大厅使用!!",
-    Callback = function ()
-        local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
-        for i,v in pairs(require(game.ReplicatedStorage.Achievements)) do
-            spawn(function()
-                require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.AchievementUnlock)(nil, i)
-            end)
-        end
-    end
-})
-Tab:AddButton({
-	Name = "DOORS变身脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-end
-})  
-
-local Tab = Window:MakeTab({
-  Name = "Doors",
-  Icon = "rbxassetid://10483855823",
-  PremiumOnly = false
-})
-
-Tab:AddButton({
-  Name = "磁铁",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "可以清除东西的枪",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
-  end
-})
- 
-Tab:AddButton({
-  Name = "DOORS低回拉穿墙",
-  Callback = function()
-    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
-  end
-})
-local KeyChams = {}
-Tab:AddToggle({
-	Name = "钥匙显示",
-	Default = false,
-    Flag = "KeyToggle",
-    Save = true,
-	Callback = function(Value)
-		for i,v in pairs(KeyChams) do
-            v.Enabled = Value
-        end
-	end    
-})
-
-local function ApplyKeyChams(inst)
-    wait()
-    local Cham = Instance.new("Highlight")
-    Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-    Cham.FillColor = Color3.new(0.980392, 0.670588, 0)
-    Cham.FillTransparency = 0.5
-    Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
-    Cham.Parent = game:GetService("CoreGui")
-    Cham.Adornee = inst
-    Cham.Enabled = OrionLib.Flags["KeyToggle"].Value
-    Cham.RobloxLocked = true
-    return Cham
-end
-
-local KeyCoroutine = coroutine.create(function()
-    workspace.CurrentRooms.DescendantAdded:Connect(function(inst)
-        if inst.Name == "KeyObtain" then
-            table.insert(KeyChams,ApplyKeyChams(inst))
-        end
-    end)
-end)
-for i,v in ipairs(workspace:GetDescendants()) do
-    if v.Name == "KeyObtain" then
-        table.insert(KeyChams,ApplyKeyChams(v))
-    end
-end
-coroutine.resume(KeyCoroutine)
-Tab:AddButton({
-  Name = "剪刀",
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
-  end
-})
-Tab:AddButton({
-  Name = "骷髅钥匙",
-  Callback = function ()
-    local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
-  end
-})
-Tab:AddButton({
-	Name = "神圣手雷（炸到自己黑屏）",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "万圣节十字架",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Mye123/MyeWareHub/main/Halloween%20Crucifix"))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "错误十字架",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Bumble-crucifix/main/Bumble-crucifix"))()
-    end
-}) 
-
-Tab:AddButton({
-	Name = "圣诞节十字架",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Christmas-Crucifix/main/Christmas%20crucifix.lua"))()
-    end
-}) 
-
-Tab:AddButton({
-	Name = "紫色手电筒（在电梯购买东西的时候使用）",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
-end
-})  
- 
- Tab:AddButton({
-	Name = "拆除假的门",
-	Callback = function()
-     loadstring(game:HttpGet("https://pastebin.com/raw/ZcNPGJfQ"))()
-	end
-})
-
-Tab:AddButton({
-	Name = "手电筒（没电会有bug）",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Normal%20Flashlight"))()
-end
-})      
-
- Tab:AddButton({
-	Name = "全亮",
-	Callback = function()
-     loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
-	end
-})
-
-Tab:AddToggle({
-	Name = "无火",
-	Default = false,
-    Flag = "NoSeek",
-    Save = true
-})
-
-Tab:AddToggle({
-	Name = "立即互动",
-	Default = false,
-    Flag = "InstantToggle",
-    Save = true
-})
-
-Tab:AddButton({
-	Name = "无突脸",
-	Callback = function()
-        pcall(function()
-            game:GetService("ReplicatedStorage").Bricks.Jumpscare:Destroy()
-        end)
-  	end    
-})
-Tab:AddButton({
-  Name = "极端模式",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
-  end
-})
-Tab:AddButton({
-  Name = "微山",
-  Callback = function()
-    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
-  end
-})
-Tab:AddButton({
-  Name = "DOORS多脚本",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/07P53fFE"))()
-  end
 })
 
 local Tab = Window:MakeTab({
