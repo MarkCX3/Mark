@@ -1,7 +1,7 @@
 local a=tostring(game.Players.LocalPlayer.Character);
-if a=="xinhaoxian3"then
+if a=="ikun14151"then
 _G.QB=true
-elseif a=="wusuus1"then
+elseif a=="sjqiehs"then
 _G.QB=true
 end
 if _G.QB==true then
