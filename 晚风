@@ -218,6 +218,68 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
   	end    
 })
+local Tab = Window:MakeTab({
+	Name = "Doors脚本"
+	Icon = "rbxassetid://10483855823",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "门", 
+  Callback = function()
+    loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
+ end
+})
+Tab:AddButton({
+	Name = "不坤到什么名字",
+	Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+end
+})
+Tab:AddButton({
+	Name = "最强HDS",
+	Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
+	end 
+})
+Tab:AddButton({
+	Name = "XD夜",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "doors变形",
+	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
+	end
+})
+Tab:AddButton({
+	Name = "福利脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+	end
+})
+Tab:AddButton({
+	Name = "超级脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
+end
+})
+Tab:AddButton({
+	Name = "修改",
+	Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+	end
+})
+Tab:AddButton({
+    Name = "全成就【不是真的】不要在大厅使用!!",
+    Callback = function ()
+        local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+        for i,v in pairs(require(game.ReplicatedStorage.Achievements)) do
+            spawn(function()
+                require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.AchievementUnlock)(nil, i)
+            end)
+        end
+    end
 local player = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
@@ -463,68 +525,6 @@ Tab:AddButton({
   end    
  })
 
-local Tab = Window:MakeTab({
-	Name = "Doors脚本"
-	Icon = "rbxassetid://10483855823",
-	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "门", 
-  Callback = function()
-    loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
- end
-})
-Tab:AddButton({
-	Name = "不坤到什么名字",
-	Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
-end
-})
-Tab:AddButton({
-	Name = "最强HDS",
-	Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
-	end 
-})
-Tab:AddButton({
-	Name = "XD夜",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
-	end
-})
-Tab:AddButton({
-	Name = "doors变形",
-	Callback = function()		loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()'))()
-	end
-})
-Tab:AddButton({
-	Name = "福利脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-	end
-})
-Tab:AddButton({
-	Name = "超级脚本",
-	Callback = function()
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Fazedrab/EntitySpawner/main/doors(orionlib).lua"))()
-end
-})
-Tab:AddButton({
-	Name = "修改",
-	Callback = function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
-	end
-})
-Tab:AddButton({
-    Name = "全成就【不是真的】不要在大厅使用!!",
-    Callback = function ()
-        local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
-        for i,v in pairs(require(game.ReplicatedStorage.Achievements)) do
-            spawn(function()
-                require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.AchievementUnlock)(nil, i)
-            end)
-        end
-    end
 })
 Tab:AddButton({
 	Name = "DOORS变身脚本",
@@ -556,7 +556,6 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
   end
 })
-Tab:AddTextbox({	Name = "设置门的文字",	PlaceholderText = "关注我，关注我",	RemoveTextAfterFocusLost = false,	Callback = function(Text)        local r=workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]        r.Door.Sign.Stinker.Text=Text        r.Door.Sign.Stinker.Highlight.Text=Text        r.Door.Sign.Stinker.Shadow.Text=Text	end,    })
 Tab:AddButton({
 	Name = "人物绘图名字显示",
 	Callback = function()
