@@ -415,7 +415,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "飞车",
 	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E9%A3%9E%E8%BD%A6"))()
 	end
 })
 Tab:AddButton({
@@ -424,8 +424,8 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
 	end
 })
-player:AddToggle({
-	Name = "穿墙",
+Tab:AddToggle({
+  Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
 		if Value then
@@ -528,6 +528,7 @@ Tab:AddButton({
   loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
   end    
  })
+ Tab:AddButton({    Name="点一下肾虚",    Callback=function()game.Players.LocalPlayer.Character.Humanoid.Health=0    end})
  local Tab = Window:MakeTab({
 	Name = "脚本",
 	Icon = "rbxassetid://4483345998",
@@ -577,6 +578,8 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
   end
 })
+Tab:AddButton({	Name = "mc房",	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/y2WmccLk"))()end})
+Tab:AddTextbox({	Name = "设置门的文字",	PlaceholderText = "关注我，关注我",	RemoveTextAfterFocusLost = false,	Callback = function(Text)        local r=workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]        r.Door.Sign.Stinker.Text=Text        r.Door.Sign.Stinker.Highlight.Text=Text        r.Door.Sign.Stinker.Shadow.Text=Text	end,    })
 Tab:AddButton({
 	Name = "人物绘图名字显示",
 	Callback = function()
@@ -662,6 +665,8 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/PiotrekMineRoblox/Christmas-Crucifix/main/Christmas%20crucifix.lua"))()
     end
 }) 
+
+Tab:AddButton({	Name = "臭猫",	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()end})
 
 Tab:AddButton({
 	Name = "紫色手电筒（在电梯购买东西的时候使用）",
