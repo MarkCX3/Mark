@@ -30,7 +30,7 @@ end
 Tab:AddButton({
 	Name = "QQ反映群",
 	Callback = function()
-setclipboard("794550123")
+setclipboard("760162062")
 end
 })      
 local Tab = Window:MakeTab({
@@ -413,7 +413,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
 	end
 })
 Tab:AddToggle({
-	Name = "穿墙",
+  Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
 		if Value then
