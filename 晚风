@@ -1,10 +1,3 @@
-local a=tostring(game.Players.LocalPlayer.Character);
-if a=="ikun14151"then
-_G.QB=true
-elseif a=="sjqiehs"then
-_G.QB=true
-end
-if _G.QB==true then
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
 local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, IntroText = "风脚本"ConfigFolder = "风脚本"})
 local Tab = Window:MakeTab({
@@ -855,9 +848,3 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
   	end    
 })
-
-OrionLib:Init()
-else
- 
-game.Players.LocalPlayer:Kick(a.."你没有被列入白名单请联系3334964")
-end
