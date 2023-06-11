@@ -516,12 +516,6 @@ Tab:AddButton({
   loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
   end    
  })
- Tab:AddButton({	
-Name = "音乐",
-		Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/music.lua"))()
-  end
-})
 local Tab = Window:MakeTab({
 	Name = "脚本",
 	Icon = "rbxassetid://4483345998",
