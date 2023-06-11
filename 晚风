@@ -532,7 +532,6 @@ Tab:AddButton({
   loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
   end    
  })
- Tab:AddButton({    Name="点一下肾虚",    Callback=function()game.Players.LocalPlayer.Character.Humanoid.Health=0    end})
  local Tab = Window:MakeTab({
 	Name = "脚本",
 	Icon = "rbxassetid://4483345998",
