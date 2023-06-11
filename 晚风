@@ -286,13 +286,13 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
 end
-})  
+})
+
 local player = Window:MakeTab({
 	Name = "玩家",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
 Tab:AddButton({
   Name = "加速能量条",
   Callback = function()
