@@ -5,6 +5,8 @@ elseif a=="ikun14151"then
 _G.QB=true
 elseif a=="fvoydcn"then
 _G.QB=true
+elseif a=="thdfr243df"then
+_G.QB=true
 end
 if _G.QB==true then
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
