@@ -23,7 +23,7 @@ OrionLib:MakeNotification({
 })
 
 local Tab = Window:MakeTab({
-  Name = "公告🤓",
+  Name = "必看",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -142,7 +142,6 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://getexploits.com/key-system/',true))('https://da.com/936657404291084298/1006220505583460352/Script.txt')
   end
 })
-
 Tab:AddButton({
   Name = "破坏者迷团",
   Callback = function()
@@ -174,6 +173,12 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+  Name = "51区",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
+ end
+})
+Tab:AddButton({
   Name = "监狱人生",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
@@ -195,18 +200,6 @@ loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
 end
 })
 Tab:AddButton({
-  Name = "俄亥俄州",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
- end
-})
-Tab:AddButton({
-	Name = "俄亥俄州2",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
-end
-})
-Tab:AddButton({
 	Name = "后室",
 	Callback = function()
      loadstring(game:HttpGet('https://pastebin.com/raw/Gsqd40fL'))()
@@ -219,7 +212,7 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "Doors脚本"
+	Name = "DOORS",
 	Icon = "rbxassetid://10483855823",
 	PremiumOnly = false
 })
@@ -280,10 +273,17 @@ Tab:AddButton({
             end)
         end
     end
-local player = Window:MakeTab({
-	Name = "玩家",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "DOORS变身脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end
+})  
+local Tab = Window:MakeTab({
+  Name = "通用",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
 })
 Tab:AddButton({
   Name = "加速能量条",
@@ -524,19 +524,38 @@ Tab:AddButton({
   loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()  	
   end    
  })
-
-})
-Tab:AddButton({
-	Name = "DOORS变身脚本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-end
-})
 local Tab = Window:MakeTab({
-	Name = "Doors功能",
-	Icon = "rbxassetid://10483855823",
+	Name = "脚本",
+	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "黑客脚本",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
+end
+})
+
+Tab:AddButton({
+	Name = "管理员",
+	Callback = function()
+loadstring(game: HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+end
+})
+
+Tab:AddButton({
+	Name = "阿尔宙斯V3",
+	Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))() 
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "仅DOORS可用脚本",
+  Icon = "rbxassetid://10483855823",
+  PremiumOnly = false
+})
+
 Tab:AddButton({
   Name = "磁铁",
   Callback = function()
@@ -555,12 +574,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
   end
-})
-Tab:AddButton({
-	Name = "人物绘图名字显示",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/tou"))()
-  	end
 })
 local KeyChams = {}
 Tab:AddToggle({
@@ -663,7 +676,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Nor
 end
 })      
 
-Tab:AddButton({
+ Tab:AddButton({
 	Name = "全亮",
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
@@ -698,14 +711,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/39GKHD55"))()
   end
 })
-
 Tab:AddButton({
   Name = "微山",
   Callback = function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
   end
 })
-
 Tab:AddButton({
   Name = "DOORS多脚本",
   Callback = function()
@@ -713,25 +724,6 @@ Tab:AddButton({
   end
 })
 
-Tab:AddButton({
-	Name = "夜视仪",
-	Callback = function()
-      	loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
-  	end
-})
-Tab:AddButton({
-	Name = "封印物体十字架(需要键盘q)",
-	Callback = function()
-      	loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "键盘",
-	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-  	end
-})
 local Tab = Window:MakeTab({
   Name = "脚本集(会覆盖)",
   Icon = "rbxassetid://4483345998",
