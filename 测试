@@ -9,56 +9,6 @@ elseif a=="thdfr243df"then
 _G.QB=true
 end
 if _G.QB==true then
-local TimeGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Time = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
-local UICorner_2 = Instance.new("UICorner")
-TimeGui.Name = "TimeGui"
-TimeGui.Parent = game.CoreGui
-TimeGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Main.Name = "Main"
-Main.Parent = TimeGui
-Main.AnchorPoint = Vector2.new(0.5, 0.5)
-Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.105332866, 0, 0.789346218, 0)
-Main.Size = UDim2.new(0.182617068, 0, 0.100000001, 0)
-Time.Name = "Time"
-Time.Parent = Main
-Time.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-Time.BorderColor3 = Color3.fromRGB(255, 0, 4)
-Time.BorderSizePixel = 0
-Time.Size = UDim2.new(1, 0, 1, 0)
-Time.Font = Enum.Font.Highway
-Time.Text = ""
-Time.TextColor3 = Color3.fromRGB(0, 0, 0)
-Time.TextScaled = true
-Time.TextSize = 14.000
-Time.TextWrapped = true
-UICorner.Parent = Time
-UICorner_2.Parent = Main
-local function GNZVM_fake_script() -- TimeGui.LocalScript 
-local script = Instance.new('LocalScript', TimeGui)
-local Main = script.Parent:WaitForChild("Main")
-local timeLable = Main:WaitForChild("Time")
-while wait() do
-local seconds = os.date("*t")["sec"]
-local minutes = os.date("*t")["min"]
-local hours = os.date("*t")["hour"]
-if tonumber(seconds) <= 9 then
-seconds = "0"..seconds
-end
-if tonumber(minutes) <= 9 then
-minutes = "0"..minutes
-end
-if tonumber(hours) <= 9 then
-hours = "0"..hours
-end
-timeLable.Text = hours..":"..minutes..":"..seconds
-end
-end
-coroutine.wrap(GNZVM_fake_script)()
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local Window = OrionLib:MakeWindow({Name = "你已加入白名单", HidePremium = false, SaveConfig = ture, IntroText = "风脚本", ConfigFolder = "风脚本"})
 OrionLib:MakeNotification({
@@ -194,6 +144,12 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
  end
+})
+Tab:AddButton({
+  Name = "破坏者谜团2"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/KAT"))()
+end
 })
 Tab:AddButton({
   Name = "进击的僵尸",
