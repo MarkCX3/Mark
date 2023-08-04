@@ -17,8 +17,9 @@ elseif a=="qinhaofen"then
 _G.QB=true
 end
 if _G.QB==true then
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+local Window = OrionLib:MakeWindow({Name = "晚风脚本", HidePremium = false, SaveConfig = true,IntroText = "你已加入白名单", ConfigFolder = "你已加入白名单"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "晚风"; Text ="晚风脚本"; Duration = 4; })
 OrionLib:MakeNotification({
 	Name = "欢迎使用风脚本",
 	Content =  "当前游戏ID为:" .. game.GameId .. ".",
