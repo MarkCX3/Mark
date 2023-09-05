@@ -1,5 +1,45 @@
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/UI"))()
-local Window = OrionLib:MakeWindow({Name = "风脚本", HidePremium = false, SaveConfig = false, ConfigFolder = "风脚本"})
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.Position = UDim2.new(0.75,0,0.010,0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL.TextWrapped = true
+LBL.Visible = true
+
+local FpsLabel = LBL
+local Heartbeat = game:GetService("RunService").Heartbeat
+local LastIteration, Start
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+	LastIteration = tick()
+	for Index = #FrameUpdateTable, 1, -1 do
+		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+	end
+	FrameUpdateTable[1] = LastIteration
+	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+	CurrentFPS = CurrentFPS - CurrentFPS % 1
+	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)local Window = OrionLib:MakeWindow({Name = "晚风脚本", HidePremium = false, SaveConfig = false, IntroText = "晚风脚本", ConfigFolder = "晚风脚本"})
+OrionLib:MakeNotification({
 local Tab = Window:MakeTab({
   Name = "公告🤓",
   Icon = "rbxassetid://4483345998",
@@ -34,6 +74,18 @@ Tab:AddButton({
   Name = "巨人模拟器",
   Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/Giant%20Simulator%20Auto%20Rebirth.lua'))()
+ end
+})
+Tab:AddButton({
+  Name = "evade",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+ end
+})
+Tab:AddButton({
+  Name = "evade2",
+  Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Evade.txt'))()
  end
 })
 Tab:AddButton({
@@ -152,6 +204,42 @@ Tab:AddButton({
  end
 })
 Tab:AddButton({
+ Name = "骨折模拟器"
+ Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/5rEAVmcC'))()
+ end 
+})
+Tab:AddButton({
+ Name = "自动赛跑"
+ Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/3a910ab54ac092179586e70b514c8e8d29d49aab/%E7%82%B9%E5%87%BB%E8%B5%9B%E8%B7%91"))()
+ end 
+}）
+Tab:AddButton({
+ Name = "河北farm"
+ Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
+ end 
+})
+Tab:AddButton({
+ Name = "动感星期五"
+ Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+ end 
+})
+Tab:AddButton({
+ Name = "scp roleplay（scp角色扮演）"
+ Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/exehubrblx/SCP-Roleplay/main/script'),true))()
+ end 
+})
+Tab:AddButton({
+ Name = "索纳尼亚"
+ Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mangnex/Lycan-X-Hub/main/Creature%20of%20Sonaria%20Mobile"))()
+ end 
+})
+Tab:AddButton({
   Name = "监狱人生",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
@@ -195,6 +283,29 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
   	end    
+})
+local Tab = Window:MakeTab({
+  Name = "战争大亨",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "战争大亨",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nivex123456/War-Tycoon/main/Script"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "战争大亨",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0wartycoon", true))()  	
+ end    
+})
+Tab:AddButton({
+	Name = "战争大亨",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ufouzzed/WarTycoon/main/ByJMaxeyy"))() 	
+ end    
 })
 local Tab = Window:MakeTab({
 	Name = "DOORS",
@@ -287,12 +398,6 @@ Tab:AddToggle({
       game.Lighting.Ambient = Color3.new(0, 0, 0)
     end
   end
-})
-Tab:AddButton({
-	Name = "无限跳",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
-    end
 })
 Tab:AddButton({
   Name = "飞行",
@@ -460,12 +565,6 @@ Tab:AddButton({
 	Name = "超多??",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/LwQkm563"))();
-end
-})
-Tab:AddButton({
-	Name = "爬墙",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end
 })
 Tab:AddButton({
