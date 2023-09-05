@@ -215,6 +215,12 @@ loadstring(game:HttpGet('https://pastebin.com/raw/5rEAVmcC'))()
  end 
 })
 Tab:AddButton({
+ Name = "自动赛跑"
+ Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E7%82%B9%E5%87%BB%E8%B5%9B%E8%B7%91'))()
+ end
+})
+Tab:AddButton({
  Name = "河北farm"
  Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
