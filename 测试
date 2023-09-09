@@ -64,7 +64,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-Tab:AddParagraph("更新FE脚本，宠物模拟器X和后室还有doors的一些功能")
+Tab:AddParagraph("更新尼克的机器人，msdoors，还有四个汉化过的脚本")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
   Name = "反挂机（一定要，不一定）",
@@ -124,6 +124,13 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
  end
+})
+Tab:AddButton({
+ Name = "犯罪（手机可能用不了）
+ Callback = function()
+ function safe_call(url)local a, b = pcall(request, { Url = url });if not a then return end;if not b then return end;return b.Body;end
+loadstring(safe_call("https://api.moonlighthub.wtf/starting"))()
+ end 
 })
 Tab:AddButton({
   Name = "彩虹朋友",
