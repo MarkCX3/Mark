@@ -120,7 +120,7 @@ Tab:AddButton({
   end
 })
 Tab:AddButton({
-  Name = "bf",
+  Name = "bf2",
   Callback = function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
  end
@@ -147,6 +147,24 @@ Tab:AddButton({
   Name = "Evade",
   Callback = function ()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+ end
+})
+Tab:AddButton({
+  Name = "nico's nextbots",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))() 
+ end
+})
+Tab:AddButton({
+  Name = "稿子挖矿模拟器",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E7%A8%BF%E5%AD%90%E6%8C%96%E7%9F%BF%E6%A8%A1%E6%8B%9F%E5%99%A8"))() 
+ end
+})
+Tab:AddButton({
+  Name = "幸运方块大乱斗",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E5%B9%B8%E8%BF%90%E6%96%B9%E5%9D%97%E5%A4%A7%E4%B9%B1%E6%96%97"))() 
  end
 })
 Tab:AddButton({
@@ -319,6 +337,12 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/R8QMbhzv'))()
 	end 
+})
+Tab:AddButton({
+ Name = "MSDOORS（只能ｆｌ使用)
+ Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+ end
 })
 Tab:AddButton({
 	Name = "XD夜",
