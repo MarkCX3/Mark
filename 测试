@@ -267,12 +267,6 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/9hxkxUZ5'),true))()
 end
 })
 Tab:AddButton({
-  Name = "短信模拟器"
-  Callback = function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/9hxkxUZ5'),true))()
-end
-})
-Tab:AddButton({
   Name = "门", 
   Callback = function()
     loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
