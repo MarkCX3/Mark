@@ -77,12 +77,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/
  end
 })
 Tab:AddButton({
-	Name = "厕所模拟器",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/misc-scripts/main/public_bathroom_crasher.lua'))()
-end
-})
-Tab:AddButton({
   Name = "自然灾害模拟器",
   Callback = function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))() 
@@ -144,18 +138,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%B
  end
 })
 Tab:AddButton({
-  Name = "稿子挖矿模拟器",
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E7%A8%BF%E5%AD%90%E6%8C%96%E7%9F%BF%E6%A8%A1%E6%8B%9F%E5%99%A8"))() 
- end
-})
-Tab:AddButton({
-  Name = "幸运方块大乱斗",
-  Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E5%B9%B8%E8%BF%90%E6%96%B9%E5%9D%97%E5%A4%A7%E4%B9%B1%E6%96%97"))() 
- end
-})
-Tab:AddButton({
   Name = "兵工厂",
   Callback = function()
 	loadstring(game:HttpGet('http://pan.rlyun.asia/api/v3/file/get/15369/%E4%B9%92%E5%B7%A5%E5%8E%82?sign=pDWgMBQ_m8pjcTS9-o8N1zvCmYmc6LsQVjeDaypp0bw%3D%3A0'))()
@@ -203,24 +185,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
  end
-})
-Tab:AddButton({
- Name = "骨折模拟器"
- Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/5rEAVmcC'))()
- end 
-})
-Tab:AddButton({
- Name = "自动赛跑"
- Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E7%82%B9%E5%87%BB%E8%B5%9B%E8%B7%91'))()
- end
-})
-Tab:AddButton({
- Name = "河北farm"
- Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
- end 
 })
 Tab:AddButton({
   Name = "进击的僵尸",
@@ -949,4 +913,4 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
   	end    
-})
+}) 
