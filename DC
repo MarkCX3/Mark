@@ -10,7 +10,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("作者","不认识")
 Tab:AddLabel("作者QQ:没有qq")
-Tab:AddParagraph("更新了空气")
+Tab:AddParagraph("更新了索尔rng")
 Tab:AddParagraph("借用了一些源码，勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
@@ -33,11 +33,28 @@ end
 })
 
 local Tab = Window:MakeTab({
-  Name = "单独服务器脚本",
+  Name = "sol's rng",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-
+Tab:AddButton({
+        Name = "索尔RNG(hoho)"
+        Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end
+})
+Tab:AddButton({
+        Name = "索尔RNG 1(需要卡密)"
+        Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Looser3itx/Hmmmmmmmmmmmmmmmmmmmmmmmmmmmm/main/loader.lua"))()
+end
+})
+Tab:AddButton({
+        Name = "索尔RNG 2"
+        Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/upd/main/rng"))()
+end
+})
 getgenv().key = "114514" --卡密
 getgenv().find = "在公告那加" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
