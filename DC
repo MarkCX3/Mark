@@ -10,7 +10,8 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("作者","不认识")
 Tab:AddLabel("作者QQ:没有qq")
-Tab:AddParagraph("更新了索尔rng")
+Tab:AddParagraph("可以告诉我你希望加入的脚本")
+Tab:AddParagraph("更新了索尔rng，最强战场，TPS等")
 Tab:AddParagraph("借用了一些源码，勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
@@ -28,7 +29,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "复制QQ号",
 	Callback = function()
-setclipboard("3334964")
+setclipboard("3164396703")
 end
 })
 
@@ -122,6 +123,43 @@ end
 })
 
 local Tab = Window:MakeTab({
+   Name = "king legacy",
+   Icon = "rbxassetid://4483345998"
+   PremiumOnly = false
+})
+Tab:AddButton({
+   Name = "国王遗产(only three functions now)"
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lemuri4/lemuriscript/main/kinglegacys.lua"))()
+end
+})
+Tab:AddButton({
+   Name = "国王遗产 2(has more,more than three functions)"
+   Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/IMVJjbFl/raw'),true))()
+end
+})
+
+Tab:AddButton({
+   Name = "国王遗产 3(功能多idk)"
+   Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()
+end
+})
+
+local Tab = Window:MakeTab({
+   Name = "犯罪",
+   Icon = "rbxassetid://17371038707",
+   PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "cri 1"
+  Callback = function()
+loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()
+end
+})
+
+local Tab = Window:MakeTab({
     Name = "ANIME FANTASY",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
@@ -143,6 +181,7 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://nicuse.xyz/SaitamaBattlegrounds.lua"))()
 end
 })
+
 local Tab = Window:MakeTab({
     Name = "TYPE://SOUL",
     Icon = "rbxassetid://4483345998",
@@ -154,6 +193,7 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
 end
 })
+
 local Tab = Window:MakeTab({
       Name = "BF",
       Icon = "rbxassetid://4483345998",
@@ -176,10 +216,24 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Beta.Loader"))()
 end
 })
+
 local Tab = Window:MakeTab({
 	Name = "Doors",
 	Icon = "rbxassetid://17366940550",
 	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "doors dark mode"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Dark%20Mode/source.lua"))()
+end
+})
+
+Tab:AddButton({
+   Name = "Doors vynixu(只能电脑)"
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Loader.lua"))()
+end
 })
 Tab:AddButton({
   Name = "微山",
@@ -217,6 +271,7 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/upd/main/rng"))()
 end
 })
+
 local Tab = Window:MakeTab({
 	Name = "FE🌚",
 	Icon = "rbxassetid://4483345998",
