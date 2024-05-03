@@ -1,7 +1,7 @@
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Orion%20mobile.lua"))() 
-  
-local Window = OrionLib:MakeWindow({Name = "DC", HidePremium = false, SaveConfig = false, IntroText = "DC", ConfigFolder = "Orion"})
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
+local Window = redzlib:MakeWindow({
+  Title = "DC",
 local Tab = Window:MakeTab({
     Name = "脚本公告",
     Icon = "rbxassetid://7734068321",
@@ -102,13 +102,58 @@ local Tab = Window:MakeTab({
    Icon = "rbxassetid://4483345998",
    premiumOnly = false
 })
-Tab:Button({
+Tab:AddButton({
    Name = "Omen(卡密omenfree)
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))()
 end
 })
+Tab:AddButton({
+  Name = "BlueRed Hub V12",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexcirer/Alexcirer/main/Sh"))()
+end
+})
+Tab:AddButton({
+  Name = "BUTIF HUB"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NEWBUTIF/Universal-Script-Hub/main/Butif%20Hub"))()
+end
+})
 
+local Tab = Window:MakeTab({
+    Name = "ANIME FANTASY",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddButton({
+   Name = "ANIME FANTASY",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+end
+})
+local Tab = Window:MakeTab({
+   Name = "TSB最强战场"
+   Icon = "rbxassetid://4483345998",
+   PremiumOnly = false
+})
+Tab:AddButton({
+   Name = "TSB(需要卡密)"
+   Callback = function()
+loadstring(game:HttpGet("https://nicuse.xyz/SaitamaBattlegrounds.lua"))()
+end
+})
+local Tab = Window:MakeTab({
+    Name = "TYPE://SOUL",
+    Icon = "rbxassetid://4483345998",
+    premiumOnly = false 
+})
+Tab:AddButton({
+   Name = "TYPE://SOUL HUB"
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+end
+})
 local Tab = Window:MakeTab({
       Name = "BF",
       Icon = "rbxassetid://4483345998",
@@ -124,6 +169,11 @@ Tab:AddButton({
    Name = "BF 2"
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end
+})
+Tab:AddButton({
+  Name = "BF 3"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Beta.Loader"))()
 end
 })
 local Tab = Window:MakeTab({
@@ -175,4 +225,3 @@ local Tab = Window:MakeTab({
 getgenv().key = "114514" --卡密
 getgenv().find = "在公告那加" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
-OrionLib:Init()
