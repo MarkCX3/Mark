@@ -1,7 +1,7 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Orion%20mobile.lua"))() 
+  
+local Window = OrionLib:MakeWindow({Name = "DC", HidePremium = false, SaveConfig = false, IntroText = "DC", ConfigFolder = "Orion"})
 
-local Window = redzlib:MakeWindow({
-  Title = "DC",
 local Tab = Window:MakeTab({
     Name = "脚本公告",
     Icon = "rbxassetid://7734068321",
@@ -280,3 +280,4 @@ local Tab = Window:MakeTab({
 getgenv().key = "114514" --卡密
 getgenv().find = "在公告那加" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
+OrionLib:Init()
