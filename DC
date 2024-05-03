@@ -10,7 +10,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("作者","不认识")
 Tab:AddLabel("作者QQ:没有qq")
-Tab:AddParagraph("更新FE脚本，宠物模拟器X和后室还有doors的一些功能")
+Tab:AddParagraph("更新了空气")
 Tab:AddParagraph("借用了一些源码，勿喷")
 Tab:AddParagraph("一定要反挂机"," ")
 Tab:AddButton({
