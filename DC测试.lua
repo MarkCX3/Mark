@@ -15,9 +15,9 @@ getgenv().gamesConfig = {
         placeId = 15532962292, 
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
-        gameName = "[RELEASE] Rogue Ninja",
-        placeId = 14206055326, 
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMalfume/Drowned/main/Drownedhub"))()]]
+        gameName = "king legacy",
+        placeId = 4520749081, 
+        ConfigScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
     },
     -- Add more games if needed!
 }
@@ -42,8 +42,8 @@ getgenv().gamechecker = true                                      --game placeid
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = "Drownedhub"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMalfume/Drowned/main/Drownedhub"))()]]
+getgenv().ScriptName = "3fQ9psgV"
+getgenv().UniversalScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
