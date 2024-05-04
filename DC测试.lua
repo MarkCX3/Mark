@@ -41,9 +41,9 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-gtgenv().keysystem = true
+getgenv().keysystem = true
 getgenv().key = "114514"
-getgenv().find = "加作者qq3334964" --联系作者什么的
+getgenv().keylink = "qq 3164396703"
 
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
