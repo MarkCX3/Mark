@@ -6,9 +6,9 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
     },
     {
-        gameName = "Game Placeholder",
-        placeId = 0000000000, 
-        ConfigScript = [[ --script here  ]]
+        gameName = "Natural Disaster Survival",
+        placeId = 189707, 
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
     },
     -- Add more games if needed!
 }
@@ -26,9 +26,12 @@ getgenv().key = "114514"                            -- (can also use HttpGet or 
 getgenv().keylink = "QQ 3164396703"
 
 --[[GAME CHECK]]--
-getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
-getgenv().ScriptName = "Nico'snextbots.lua"                                --name of your script
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]                  --script to execute when gamechecker off
+getgenv().gamechecker = true
+getgenv().ScriptName = "Nico'snextbots.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "NaturalDisasters.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
