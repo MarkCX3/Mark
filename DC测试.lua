@@ -41,9 +41,9 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().key = "114514" --卡密
+gtgenv().keysystem = true
+getgenv().key = "114514"
 getgenv().find = "加作者qq3334964" --联系作者什么的
-loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))()
 
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
