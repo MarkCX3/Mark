@@ -16,9 +16,9 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
     {
-        gameName = "Heroes Battlegrounds",
-        placeId = 13076380114, 
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()]]
+        gameName = "",
+        placeId = , 
+        ConfigScript = [[]]
     },
     {
         gameName = "[RELEASE] Rogue Ninja",
@@ -33,6 +33,7 @@ getgenv().logo = [[
 版本：1.0
 状态：公测
 作者：CR
+已更新:rogue ninja sol's RNG nico's nextbots Natural Disaster survival
     ]]
 
 --[[KEYSYSTEM]]--
@@ -48,8 +49,8 @@ getgenv().gamechecker = true                                      --game placeid
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = "DemonicHub_V2.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()]]
+getgenv().ScriptName = ""
+getgenv().UniversalScript = [[]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "Drownedhub"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMalfume/Drowned/main/Drownedhub"))()]]
