@@ -10,6 +10,11 @@ getgenv().gamesConfig = {
         placeId = 189707, 
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
     },
+    {
+        gameName = "Evade"
+        placeId = 9872472334,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
+    },
     -- Add more games if needed!
 }
 
@@ -32,6 +37,9 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "NaturalDisasters.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "load.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
