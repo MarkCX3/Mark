@@ -27,7 +27,6 @@ getgenv().logo = [[
 版本：1.0
 状态：公测
 作者：CR
-已更新:rogue ninja sol's RNG nico's nextbots Natural Disaster survival
     ]]
 
 --[[KEYSYSTEM]]--
