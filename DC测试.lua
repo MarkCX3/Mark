@@ -16,8 +16,8 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
     {
-        gameName = "Criminality",
-        placeId = 4588604953, 
+        gameName = "",
+        placeId = , 
         ConfigScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
     },
     -- Add more games if needed!
@@ -25,8 +25,9 @@ getgenv().gamesConfig = {
 
 --[[LOGO]]--
 getgenv().logo = [[
-    Welcome to DC测试脚本
-this is auto open scripts
+版本：1.0
+状态：公测
+作者：CR
     ]]
 
 --[[KEYSYSTEM]]--
@@ -41,9 +42,9 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
-getgenv().gamechecker = false
-getgenv().ScriptName = "f0ndraleak.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = ""
+getgenv().UniversalScript = [[]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
