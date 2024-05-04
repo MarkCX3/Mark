@@ -8,7 +8,7 @@ getgenv().gamesConfig = {
     {
         gameName = "nico's nextbots",
         placeId = 10118559731, 
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
+        ConfigScript = [[https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico's%20nextbots.lua]]
     },
     {
         gameName = "Sol's RNG",
@@ -53,8 +53,8 @@ getgenv().gamechecker = true
 getgenv().ScriptName = "SOL.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
-getgenv().ScriptName = "nico's nextbots"                                
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
+getgenv().ScriptName = "Nico's nextbots.lua"                                
+getgenv().UniversalScript = [[https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico's%20nextbots.lua]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "3fQ9psgV"
 getgenv().UniversalScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
