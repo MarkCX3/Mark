@@ -46,22 +46,6 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
   end
 })
-Tab:AddButton({
-  Name = "美丽天空（带动态阴影）",
-  Callback = function()
-    -- Roblox Graphics Enhancher
-    local light = game.Lighting
-    for i, v in pairs(light:GetChildren()) do
-      v:Destroy()
-    end
- 
-    local ter = workspace.Terrain
-    local color = Instance.new("ColorCorrectionEffect")
-    local bloom = Instance.new("BloomEffect")
-    local sun = Instance.new("SunRaysEffect")
-    local blur = Inst
-  end
-})
 Tab:AddButton({	
   Name = "调整碰撞箱(英文)",	
   Callback = function()
