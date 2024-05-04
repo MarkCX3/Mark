@@ -41,7 +41,7 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
-getgenv().gamechecker = true
+getgenv().gamechecker = false
 getgenv().ScriptName = "f0ndraleak.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
 
