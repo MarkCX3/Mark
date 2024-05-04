@@ -1,0 +1,31 @@
+-- Gamelist
+getgenv().gamesConfig = {
+    {
+        gameName = "A literal baseplate",
+        placeId = 4483381587,
+        ConfigScript = [[ --script in here]]
+    },
+    {
+        gameName = "Game Placeholder",
+        placeId = 0000000000, 
+        ConfigScript = [[ --script here  ]]
+    },
+    -- Add more games if needed!
+}
+
+--[[LOGO]]--
+getgenv().logo = [[
+    Welcome to情云脚本
+]]
+--[[KEYSYSTEM]]--
+getgenv().keysystem = true
+getgenv().key = "1145"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
+getgenv().keylink = "qq:743282937"
+
+--[[GAME CHECK]]--
+getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
+getgenv().ScriptName = "Name Here"                                --name of your script
+getgenv().UniversalScript = [[ -- script here ]]                  --script to execute when gamechecker off
+
+-- Loader
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
