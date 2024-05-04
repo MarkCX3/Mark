@@ -46,7 +46,7 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().keysystem = false
+getgenv().keysystem = true
 getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
 getgenv().keylink = "QQ 3164396703"
 
