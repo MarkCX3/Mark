@@ -25,7 +25,7 @@ getgenv().keylink = "qq 3164396703"
 
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
-getgenv().ScriptName = "飞行"                                --name of your script
+getgenv().ScriptName = "source"                                --name of your script
 getgenv().UniversalScript = [[loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()]]   --script to execute when gamechecker off
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "NaturalDisasters.lua"                                --name of your script
