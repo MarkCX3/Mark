@@ -42,8 +42,8 @@ getgenv().logo = [[
 
 --[[KEYSYSTEM]]--
 getgenv().keysystem = true
-getgenv().key = "114514"
-getgenv().keylink = "qq 3164396703"
+getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
+getgenv().keylink = "QQ 3164396703"
 
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
