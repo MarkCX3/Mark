@@ -1,4 +1,3 @@
--- Gamelist
 getgenv().gamesConfig = {
     {
         gameName = "Natural Disaster Survival",
@@ -33,19 +32,16 @@ getgenv().gamesConfig = {
     -- Add more games if needed!
 }
 
---[[LOGO]]--
 getgenv().logo = [[
 版本：1.0
 状态：公测
 作者：CR
     ]]
 
---[[KEYSYSTEM]]--
 getgenv().keysystem = true
 getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
 getgenv().keylink = "QQ 3164396703"
 
---[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "NaturalDisasters.lua"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
@@ -65,5 +61,4 @@ getgenv().gamechecker = true
 getgenv().ScriptName = "load.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
 
--- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
