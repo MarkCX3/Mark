@@ -25,6 +25,11 @@ getgenv().gamesConfig = {
         placeId = 2866967438,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
     },
+    {
+        gameName = "Guts & Blackpowder"
+        plackId = 12334109280,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/GB.lua"))()]]
+    },
     -- Add more games if needed!
 }
 
@@ -56,6 +61,9 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "S-C-R-I-P-T.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "GB"
+getgenv().UniversalScript =[[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/GB.lua"))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
