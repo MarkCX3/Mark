@@ -20,6 +20,11 @@ getgenv().gamesConfig = {
         placeId = 15532962292,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
+    {
+        gameName = "Fishing Simulator"
+        placeId = 2866967438,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
+    },
     -- Add more games if needed!
 }
 
@@ -48,6 +53,9 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("loadstring(game:HttpGet("
 getgenv().gamechecker = true
 getgenv().ScriptName = "SOL.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "S-C-R-I-P-T.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
