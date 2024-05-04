@@ -224,7 +224,7 @@ end)
 
 
 
-Section:NewToggle("连跳加速", "ButtonInfo", function(s)
+Section:NewToggle("起飞", "ButtonInfo", function(s)
 getgenv().TPWalk = s
 local hb = game:GetService("RunService").Heartbeat
 local player = game:GetService("Players")
