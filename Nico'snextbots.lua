@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao1
 
 
 
-local Window = Library.CreateLib("Tbao Hub by CR(翻译) | Nico's nextbots", "OrangeTheme")
+local Window = Library.CreateLib("Tbao Hub by CR(翻译) | Nico's nextbots","DarkTheme")
 
 
 
