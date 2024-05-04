@@ -35,7 +35,7 @@ getgenv().gamesConfig = {
 
 --[[LOGO]]--
 getgenv().logo = [[
-版本:1.0
+版本:2.0
 作者:CR
 状态:公开
     ]]
