@@ -3,7 +3,7 @@ getgenv().gamesConfig = {
     {
         gameName = "Cabin Roleplay",
         placeId = 8310127828,
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E9%A3%9E%E8%A1%8C"))()]]
+        ConfigScript = [[loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()]]
     },
     {
         gameName = "Natural Disaster Survival",
@@ -26,7 +26,7 @@ getgenv().keylink = "qq 3164396703"
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "飞行"                                --name of your script
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E9%A3%9E%E8%A1%8C"))()]]   --script to execute when gamechecker off
+getgenv().UniversalScript = [[loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()]]   --script to execute when gamechecker off
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "NaturalDisasters.lua"                                --name of your script
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
