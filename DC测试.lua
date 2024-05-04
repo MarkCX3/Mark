@@ -41,7 +41,6 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().keysystem = true
 getgenv().key = "114514" --卡密
 getgenv().find = "加作者qq3334964" --联系作者什么的
 loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))()
