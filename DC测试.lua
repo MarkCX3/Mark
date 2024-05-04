@@ -16,9 +16,14 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
     {
-        gameName = "",
-        placeId = , 
-        ConfigScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
+        gameName = "Heroes Battlegrounds",
+        placeId = 13076380114, 
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()]]
+    },
+    {
+        gameName = "[RELEASE] Rogue Ninja",
+        placeId = 14206055326, 
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMalfume/Drowned/main/Drownedhub"))()]]
     },
     -- Add more games if needed!
 }
@@ -43,8 +48,11 @@ getgenv().gamechecker = true                                      --game placeid
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = ""
-getgenv().UniversalScript = [[]]
+getgenv().ScriptName = "DemonicHub_V2.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "Drownedhub"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMalfume/Drowned/main/Drownedhub"))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
