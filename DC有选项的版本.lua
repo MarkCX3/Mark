@@ -59,12 +59,6 @@ Tab:AddButton({
   	end
 })
 Tab:AddButton({
-	Name = "键盘(开了无法关闭)",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-	end
-})
-Tab:AddButton({
 	Name = "管理员",
 	Callback = function()
 loadstring(game: HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
