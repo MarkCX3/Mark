@@ -21,6 +21,7 @@ getgenv().gamesConfig = {
 --[[LOGO]]--
 getgenv().logo = [[
     Welcome to DC测试脚本
+this is auto open scripts
     ]]
 
 --[[KEYSYSTEM]]--
