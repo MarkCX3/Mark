@@ -20,6 +20,16 @@ getgenv().gamesConfig = {
         placeId = 4520749081, 
         ConfigScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
     },
+    {
+        gameName = "Evade"
+        placeId = 9872472334,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
+    },
+    {
+        gameName = "DOORS 👁️"
+        placeId = 6516141723,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Dark%20Mode/source.lua"))()]]
+    },
     -- Add more games if needed!
 }
 
@@ -32,8 +42,9 @@ getgenv().logo = [[
 
 --[[KEYSYSTEM]]--
 getgenv().keysystem = true
-getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
-getgenv().keylink = "qq 3164396703"
+getgenv().key = "114514" --卡密
+getgenv().find = "加作者qq3334964" --联系作者什么的
+loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))()
 
 --[[GAME CHECK]]--
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
@@ -48,6 +59,12 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "3fQ9psgV"
 getgenv().UniversalScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "source.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Dark%20Mode/source.lua"))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "load.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
