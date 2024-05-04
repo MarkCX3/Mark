@@ -280,6 +280,3 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-getgenv().key = "114514" --卡密
-getgenv().find = "在公告那加" --联系作者什么的
-loadstring(game:HttpGet("https://github.com/DocYogurt/F/raw/main/UI"))() --UI
