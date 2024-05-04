@@ -15,6 +15,7 @@ getgenv().gamesConfig = {
         placeId = 15532962292, 
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
     },
+    {
         gameName = "king legacy",
         placeId = 4520749081, 
         ConfigScript = [[loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))()]]
@@ -38,6 +39,9 @@ getgenv().keylink = "qq 3164396703"
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "NaturalDisasters.lua"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "SOL.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "nico's nextbots"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/nico's%20nextbots"))()]]
