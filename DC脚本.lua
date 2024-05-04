@@ -15,6 +15,11 @@ getgenv().gamesConfig = {
         placeId = 9872472334,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
     },
+    {
+        gameName = "Sol's RNG",
+        placeId = 15532962292,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
+    },
     -- Add more games if needed!
 }
 
