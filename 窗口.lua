@@ -135,7 +135,7 @@ local Init                              = function()
         Position                        = UDim2.fromScale(0.5, 0.5),
 
         Result                          = function(Response)
-            if Response ~= "Yes" then return end
+            if Response ~= "是" then return end
             Fondra.Loader.Version = "Developers"
             loadstring(Fondra.Functions.SecureGet("https://realbilly.lol/f0ndra/stuff/mainui.lua"))()
             loadstring(Fondra.Functions.SecureGet("https://realbilly.lol/f0ndra/stuff/visuals.lua"))()
