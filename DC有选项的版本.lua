@@ -1,10 +1,7 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Orion%20mobile.lua"))() 
+  
+local Window = OrionLib:MakeWindow({Name = "DC", HidePremium = false, SaveConfig = false, IntroText = "DC", ConfigFolder = "Orion"})
 
-local Window = redzlib:MakeWindow({
-  Title = "DC",
-  SubTitle = "By CR",
-  SaveFolder = "Redz Config"
-})
 local Tab = Window:MakeTab({
     Name = "脚本公告",
     Icon = "rbxassetid://7734068321",
@@ -273,3 +270,4 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+OrionLib:Init()
