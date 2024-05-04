@@ -10,9 +10,9 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()"))()]]
     },
     {
-        gameName = "Sol's RNG",
-        placeId = 15532962292, 
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
+        gameName = "",
+        placeId = , 
+        ConfigScript = [[]]
     },
     {
         gameName = "king legacy",
@@ -46,8 +46,8 @@ getgenv().gamechecker = true                                      --game placeid
 getgenv().ScriptName = "NaturalDisasters.lua"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = "SOL.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
+getgenv().ScriptName = ""
+getgenv().UniversalScript = [[]]
 getgenv().gamechecker = true                                      --game placeid checker on/off (true/false)
 getgenv().ScriptName = "Nico'snextbots.lua"                                
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
