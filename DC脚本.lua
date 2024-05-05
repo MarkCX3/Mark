@@ -40,11 +40,6 @@ getgenv().gamesConfig = {
         placeId = 16480898254,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]
     },
-    {
-        gameName = "",
-        placeId = ,
-        ConfigScript = [[]]
-    },
     -- Add more games if needed!
 }
 
@@ -85,9 +80,6 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "EatWorld"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]
-getgenv().gamechecker = true
-getgenv().ScriptName = ""
-getgenv().UniversalScript = [[]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
