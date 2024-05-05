@@ -45,7 +45,7 @@ getgenv().gamesConfig = {
 
 --[[LOGO]]--
 getgenv().logo = [[
-版本:2.0
+版本:3.0
 作者:CR
 状态:公开
     ]]
@@ -58,35 +58,28 @@ getgenv().keylink = "QQ 3164396703"
 --[[GAME CHECK]]--
 getgenv().gamechecker = true
 getgenv().ScriptName = "Nico'snextbots.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]  --(尼克的机器人)
-
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "NaturalDisasters.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]] ---(自然灾害)
-
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "load.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()))()]]   --(EVADE)
-
+getgenv().UniversalScript = [[loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "SOL.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]   --(Sol's RNG)
-
 getgenv().gamechecker = true
 getgenv().ScriptName = "S-C-R-I-P-T.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]  --(钓鱼模拟器)
-
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "GB"
-getgenv().UniversalScript =[[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/GB.lua"))()]]    ---(G&B)
-
+getgenv().UniversalScript =[[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/GB.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "Slap%20Battles"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]     ---(打屁股大战)
-
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "EatWorld"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]     ------(吃掉世界)
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]])
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
