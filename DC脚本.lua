@@ -74,4 +74,4 @@ getgenv().ScriptName = "Slap%20Battles"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
 
 -- Loader
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
