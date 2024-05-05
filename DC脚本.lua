@@ -41,9 +41,9 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]
     },
     {
-        gameName = "Criminality"
+        gameName = "Criminality",
         placeId = 4588604953,
-        ConfigScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
+        ConfigScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua",true))()]]
     },
     -- Add more games if needed!
 }
@@ -87,7 +87,7 @@ getgenv().ScriptName = "EatWorld"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "f0ndraleak.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua", true))()]]
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://realbilly.lol/f0ndra/f0ndraleak.lua",true))()]]
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
