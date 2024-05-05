@@ -36,8 +36,8 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
     },
     {
-        gameName = "[ICHIGO] Sakura Stand"
-        placeId = 8534845015,
+        gameName = ""
+        placeId = ,
         ConfigScript = [[]]
     },
     -- Add more games if needed!
@@ -78,8 +78,8 @@ getgenv().gamechecker = true
 getgenv().ScriptName = "Slap%20Battles"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = "S-C-R-I-P-T.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
+getgenv().ScriptName = ""
+getgenv().UniversalScript = [[]]
 
 -- Loader
 loadstring(game:HttpGet("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
