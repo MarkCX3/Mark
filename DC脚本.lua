@@ -64,10 +64,10 @@ getgenv().ScriptName = "NaturalDisasters.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "load.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
+getgenv().UniversalScript = [[loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "SOL.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]   --(Sol's RNG)
 getgenv().gamechecker = true
 getgenv().ScriptName = "S-C-R-I-P-T.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
@@ -79,7 +79,7 @@ getgenv().ScriptName = "Slap%20Battles"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "EatWorld"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]]
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/EatWorld"))()]])
 
 -- Loader
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
