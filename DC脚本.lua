@@ -16,14 +16,9 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
     },
     {
-        gameName = "Sol's RNG",
+        gameName = "Sol'sRNG",
         placeId = 15532962292,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
-    },
-    {
-        gameName = "Fishing Simulator",
-        placeId = 2866967438,
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
     },
     {
         gameName = "DOORS👁"
@@ -41,7 +36,7 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().keysystem = false
+getgenv().keysystem = true
 getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
 getgenv().keylink = "QQ 3164396703"
 
@@ -55,9 +50,6 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "load.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
-getgenv().gamechecker = true
-getgenv().ScriptName = "SOL.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Hiklom/hikka/main/SOL.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "S-C-R-I-P-T.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Demonic-HUB-V2/main/S-C-R-I-P-T.lua",true))()]]
