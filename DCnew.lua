@@ -6,11 +6,6 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
     },
     {
-        gameName = "Natural Disaster Survial"
-        placeId = 189707,
-        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
-    },
-    {
         gameName = "Evade"
         placeId = 9872472334,
         ConfigeScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/D8rkX/D8rk-Hub/main/Games/Evade.lua",true))()]]
@@ -34,9 +29,6 @@ getgenv().keylink = "QQ 3164396703"
 getgenv().gamechecker = true
 getgenv().ScriptName = "Nico'snextbots.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
-getgenv().gamechecker =true
-getgenv().ScriptName = "NaturalDisasters.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
 getgenv().gamechecker = true
 getgenv().ScriptName = "Evade.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/D8rkX/D8rk-Hub/main/Games/Evade.lua",true))()]]
