@@ -6,11 +6,6 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
     },
     {
-        gameName = "DOORS"
-        placeId = 6516141723,
-        ConfigScript = [[loadstring(game:HttpGet('https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua'))()]]
-    },
-    {
         gameName = "Natural Disaster Survial"
         placeId = 189707,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
@@ -39,9 +34,6 @@ getgenv().keylink = "QQ 3164396703"
 getgenv().gamechecker = true
 getgenv().ScriptName = "Nico'snextbots.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/Nico'snextbots.lua"))()]]
-getgenv().gamechecker = true
-getgenv().ScriptName = "MSDOORS.lua"
-getgenv().UniversalScript = [[loadstring(game:HttpGet('https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua'))()]]
 getgenv().gamechecker =true
 getgenv().ScriptName = "NaturalDisasters.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Pr0jectNight/Script-Hubs/main/Antares/NaturalDisasters.lua"))()]]
