@@ -31,11 +31,6 @@ getgenv().gamesConfig = {
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
     },
     {
-        gameName = "ENDLESS DOORS RENOVATION"
-        placeId = 17324251852,
-        ConfigScript  = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/endless-doors/main/endless%20madness%20buster",true))()]]
-    },
-    {
         gameName = "DOORS👁"
         placeId = 6516141723,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()]]
@@ -75,10 +70,8 @@ getgenv().gamechecker = true
 getgenv().ScriptName = "Slap%20Battles"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
 getgenv().gamechecker = true
-getgenv().ScriptName = "endless%20madness%20buster"
-getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/endless-doors/main/endless%20madness%20buster",true))()]]
-getgenv().gamechecker = true
 getgenv().ScriptName = "MSDOORS.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()]]
+
 -- Loader
 loadstring(game:HttpGet("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
