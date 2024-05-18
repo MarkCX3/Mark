@@ -30,18 +30,28 @@ getgenv().gamesConfig = {
         placeId = 6403373529,
         ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
     },
+    {
+        gameName = "ENDLESS DOORS RENOVATION"
+        placeId = 17324251852,
+        ConfigScript  = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/endless-doors/main/endless%20madness%20buster",true))()]]
+    },
+    {
+        gameName = "DOORS👁"
+        placeId = 6516141723,
+        ConfigScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()]]
+    },
     -- Add more games if needed!
 }
 
 --[[LOGO]]--
 getgenv().logo = [[
-版本:3.0
+版本:4.0
 作者:CR
 状态:公开
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().keysystem = true
+getgenv().keysystem = false
 getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
 getgenv().keylink = "QQ 3164396703"
 
@@ -64,6 +74,11 @@ getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercon
 getgenv().gamechecker = true
 getgenv().ScriptName = "Slap%20Battles"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/robloxsuckslikereallydude/1-Line-Scripts/main/Slap%20Battles"))()]]
-
+getgenv().gamechecker = true
+getgenv().ScriptName = "endless%20madness%20buster"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/endless-doors/main/endless%20madness%20buster",true))()]]
+getgenv().gamechecker = true
+getgenv().ScriptName = "MSDOORS.lua"
+getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"))()]]
 -- Loader
 loadstring(game:HttpGet("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
