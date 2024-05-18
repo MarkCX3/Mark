@@ -41,7 +41,7 @@ getgenv().logo = [[
     ]]
 
 --[[KEYSYSTEM]]--
-getgenv().keysystem = false
+getgenv().keysystem = true
 getgenv().key = "114514"                            -- (can also use HttpGet or Loadstring to load the key details for example from a unlisted paste)
 getgenv().keylink = "QQ 3164396703"
 
@@ -66,4 +66,4 @@ getgenv().ScriptName = "load.lua"
 getgenv().UniversalScript = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/od1ri/evade/main/load.lua"))()]]
 
 -- Loader
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/LoaderV1/main/Loader.lua"))()
