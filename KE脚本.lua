@@ -19,10 +19,14 @@ Tab:AddButton({
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
   end
 })
+Tab:AddButton({
+  Name = "自瞄"
+  Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E8%87%AA%E7%9E%84.lua"))()
 player:AddButton({
 	Name = "传送玩家",
 	Callback = function()
-      	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+      	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy"))()
   	end
 })
 Tab:AddToggle({
@@ -63,4 +67,14 @@ Tab:AddButton({
   Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/ROOMS.lua"))()
         end
+})
+local Tab = Window:Maketab({
+       Name = "刀刃球"
+       Icon = ""
+       PremiumOnly = false
+Tab:AddButton({
+    Name = ""
+    Callbcak = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoninhaHub/Scripts/main/MainLoader.Lua",true))()
+    end
 })
