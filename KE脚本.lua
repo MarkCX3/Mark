@@ -70,10 +70,10 @@ Tab:AddButton({
 })
 local Tab = Window:Maketab({
        Name = "刀刃球"
-       Icon = ""
+       Icon = "rbxassetid://17852911118"
        PremiumOnly = false
 Tab:AddButton({
-    Name = ""
+    Name = "Blade Ball"
     Callbcak = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SoninhaHub/Scripts/main/MainLoader.Lua",true))()
     end
