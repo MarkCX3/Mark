@@ -16,13 +16,13 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
   Name = "IY指令",
   Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
   end
 })
 Tab:AddButton({
   Name = "自瞄"
   Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E8%87%AA%E7%9E%84.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarkCX3/Mark/%E4%BA%BA%E6%9C%BA/%E8%87%AA%E7%9E%84.lua"))()
 player:AddButton({
 	Name = "传送玩家",
 	Callback = function()
@@ -47,13 +47,7 @@ local Tab = Window:MakeTAB({
 Tab:AddButton({
    Name = "MSDOORS"
    Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
-  end
-})
-Tab:AddButton({
-  Name = "BlackKing汉化版",
-  Callback = function()
- loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"))()
   end
 })
 Tab:AddButton({
@@ -75,6 +69,6 @@ local Tab = Window:Maketab({
 Tab:AddButton({
     Name = "Blade Ball"
     Callbcak = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SoninhaHub/Scripts/main/MainLoader.Lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoninhaHub/Scripts/main/MainLoader.Lua"))()
     end
 })
