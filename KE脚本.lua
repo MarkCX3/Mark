@@ -72,3 +72,4 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SoninhaHub/Scripts/main/MainLoader.Lua"))()
     end
 })
+OrionLib:Init()
